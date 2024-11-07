@@ -1,0 +1,136 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+:root {
+    --font-family-01: "Rubik";
+    --font-family-02: "Roboto";
+    --font-family-03: "Open Sans";
+    --font-family-04: "Poppins";
+  
+    --color-01: #fff;
+    --color-02: #E8E8E8;
+    --color-03: #000;
+    --color-04: #d06aff;
+    --color-05: #ff81ff;
+    --color-06: #4a184a;
+    --color-07: rgb(70, 14, 14);
+}
+
+body {margin: 0; padding: 0; font-family: var(--font-family-04)}
+
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #4a184a; 
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 25px;
+}
+
+#header-img {width: 140px; margin-right: 20px;}
+
+/*NAVIGATION BAR*/
+nav { 
+    display: flex;
+    justify-content: center;
+    background-color: #d06aff;
+    padding: 10px;
+    gap: 150px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    font-weight:bolder ;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+nav a:hover {background-color: #ff81ff; color: white;}
+
+
+/*HAMBURGUER BUTTON*/
+.hamburger {
+    display: none;
+    background: none;
+    margin-left: 2px;
+    color: var(--font-color-01);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*ADDING RULES FOR THE HAMBURGER NAVIGATION BAR*/
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    position: absolute;
+    top: 135%;
+    left: -100px;
+    background-color: var(--background-color-03);
+    padding: 40px;
+    height: 35.1vh;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+/*MAIN AND SECTIONS (MAIN NEEDS TO BE IN GRID)*/
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 1220px;
+    margin: 20px;
+    gap: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*all sections boxes*/
+#s01, #s02, #s03 {border: 1px solid gray; border-radius: 8px; padding-bottom: 50px;}
+
+/*Sections grids*/
+#s01 {grid-column: 1 / 2;}
+
+#s02 {grid-column: 2 / 3;}
+
+#s03 {grid-column: 1 / 3;}
+
+/*Section 1 links*/
+.course-work-links {display: block; margin-top: 50px; margin-left: 40px;}
+
+/*Centering the text, giving them a black background*/
+h2 {
+    text-align: center;
+    background-color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+}
+
+.sao-luis {
+    width: 350px;  
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+figcaption {
+    color: var(--font-color-03);
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+footer {text-align: center; background-color: #4a184a; color: white; padding: 40px;}
