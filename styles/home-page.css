@@ -83,12 +83,10 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
-    width: 100%;
     max-width: 1220px;
     margin: 20px;
     gap: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 /*ALL SECTIONS BOXES*/
@@ -207,7 +205,7 @@ footer {
 }
 
 /*RESPONSIVE STYLES*/
-@media (min-width: 590px) {
+@media (min-width: 374px) {
 	nav ul {
 		display: flex;
 	}
@@ -254,6 +252,5 @@ footer {
     }
     
     .course-card {width: 370px;}
-    
 
 }
