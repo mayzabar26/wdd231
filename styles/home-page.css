@@ -13,6 +13,8 @@
     --color-05: #ff81ff;
     --color-06: #4a184a;
     --color-07: rgb(70, 14, 14);
+    --color-08: rgb(152, 245, 152);
+    --color-09: #f8d7da;
 }
 
 body {margin: 0; padding: 0; font-family: var(--font-family-04)}
@@ -158,8 +160,45 @@ button:hover {
     color: var(--color-03);
 }
 
-/*FOOTER*/
+/*SECTION 3 -CONTENT AND CREDITS*/
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 20px;
+    gap: 0.7rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
 
+.course-card {
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.6rem;
+}
+
+#credits {text-align: center;}
+
+/* Style for completed courses and not completed courses*/
+.course-card.completed {
+    background-color: var(--color-08); /* Light background for completed courses */
+    border-left: 5px solid green; /* Different border color */
+    padding: 10px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.course-card.not-completed {
+    background-color: var(--color-09); 
+    border-left: 5px solid red; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*FOOTER*/
 footer {
     text-align: center; 
     background-color: var(--color-06); 
@@ -208,6 +247,13 @@ footer {
     }
 
     body {overflow-x: hidden;}
+
+    #content {
+        display: flex; 
+        flex-direction: column;
+    }
+    
+    .course-card {width: 370px;}
     
 
 }

@@ -99,14 +99,18 @@ function show_courses(filterChoice) {
     }
 
     //Display filtered courses
-    const allCourses = filterCourses.map(course => `<div class="course-div">${course.subject} ${course.number} - ${course.title}</div>`).join('');
+    const allCourses = filterCourses.map(course => {
+        const courseClass = course.completed ? "course-card completed" : "course-card not-completed";
+        return `<div class="${courseClass}">
+        <h3>${course.subject} ${course.number}</h3></div>`;
+    }).join(""); 
     document.getElementById("content").innerHTML = allCourses;
 
     //Calculate and display credits
     const totalCredits = filterCourses.reduce((totalAmount, course) => totalAmount + course.credits, 0);
     const incompleteCredits = filterCourses.filter(course => !course.completed).reduce((totalAmount, course) => totalAmount + course.credits, 0);
 
-    document.getElementById("credits").innerHTML = `<h3>Credits: ${incompleteCredits} / ${totalCredits}</h3>`;
+    document.getElementById("credits").innerHTML = `<h3>Credits: ${totalCredits - incompleteCredits} / ${totalCredits}</h3>`;
 }
 
 // Event listeners for the buttons
