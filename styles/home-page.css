@@ -69,12 +69,11 @@ nav a:hover {
 
 /*ADDING RULES FOR THE HAMBURGER NAVIGATION BAR*/
 .hamburger {
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
     font-size: 1.5rem;
     border: 0;
     background: none;
     color: var(--color-01);
+    padding-left: 400px;
 }
 
 /*MAIN AND SECTIONS (MAIN NEEDS TO BE IN GRID)*/
@@ -95,7 +94,7 @@ main {
     border: 1px solid gray; 
     border-radius: 8px; 
     padding-bottom: 50px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 /*SECTIONS GRIDS*/
@@ -148,14 +147,14 @@ button {
     background-color: var(--color-06);
     color: var(--color-01);
     width: 200px;
-    padding: 10px;
+    padding: 15px;
     font-weight: 700;
     font-size: 100%;
     border-radius: 10px;
 }
 
 button:hover {
-    background-color: var(--color-05);
+    background-color: var(--color-04);
     color: var(--color-03);
 }
 
@@ -189,12 +188,26 @@ footer {
 
     .navBar ul {display: none;}
 
-    .navBar ul.navBar.open {display: flex; flex-direction: column;}
+    .navBar ul.open {display: flex; flex-direction: column;}
 
     .hamburger {display: block;}
 
     .navBar.open a {background: none; color: var(--font-color-01);}
 
     .navBar.open a:hover {background: none; color: var(--button-color);}
+
+    button {width: 115px; padding: 10px;}
+
+    h2 {font-size: 15px;}
+
+    #header-img {width: 100px;}
+
+    #s01, #s02, #s03 {
+        width: 90%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    body {overflow-x: hidden;}
+    
 
 }
