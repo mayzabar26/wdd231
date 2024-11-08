@@ -22,35 +22,39 @@ body {margin: 0; padding: 0; font-family: var(--font-family-04)}
 header {
     display: flex;
     flex-direction: row;
-    background-color: #4a184a; 
-    color: white;
+    background-color: var(--color-06); 
+    color: var(--color-01);
     align-items: center;
     justify-content: center;
     padding: 15px;
-    gap: 25px;
 }
 
 #header-img {width: 140px; margin-right: 20px;}
 
 /*NAVIGATION BAR*/
-nav { 
-    display: flex;
-    justify-content: center;
-    background-color: #d06aff;
+nav {
+    background-color: var(--color-04); 
     padding: 10px;
-    gap: 150px;
 }
 
-nav a {
-    display: block;
-    padding: 10px 30px;
-    color: black;
-    font-weight:bolder ;
+nav ul {list-style-type: none;}
+
+nav a { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    color: var(--color-03);
+    font-weight: bolder;
     text-decoration: none;
     letter-spacing: 1.5px;
 }
 
-nav a:hover {background-color: #ff81ff; color: white;}
+nav a:hover {
+    text-decoration: overline;
+    color: var(--color-01);
+    padding: 8px 5px;
+}
 
 
 /*HAMBURGUER BUTTON*/
@@ -65,19 +69,12 @@ nav a:hover {background-color: #ff81ff; color: white;}
 
 /*ADDING RULES FOR THE HAMBURGER NAVIGATION BAR*/
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-    position: absolute;
-    top: 135%;
-    left: -100px;
-    background-color: var(--background-color-03);
-    padding: 40px;
-    height: 35.1vh;
-    z-index: 10;
-    opacity: 0.9;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color-01);
 }
 
 /*MAIN AND SECTIONS (MAIN NEEDS TO BE IN GRID)*/
@@ -93,30 +90,36 @@ main {
     margin-bottom: 20px;
 }
 
-/*all sections boxes*/
-#s01, #s02, #s03 {border: 1px solid gray; border-radius: 8px; padding-bottom: 50px;}
+/*ALL SECTIONS BOXES*/
+#s01, #s02, #s03 {
+    border: 1px solid gray; 
+    border-radius: 8px; 
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);;
+}
 
-/*Sections grids*/
+/*SECTIONS GRIDS*/
 #s01 {grid-column: 1 / 2;}
 
 #s02 {grid-column: 2 / 3;}
 
 #s03 {grid-column: 1 / 3;}
 
-/*Section 1 links*/
+/*SECTION 1 LINKS*/
 .course-work-links {display: block; margin-top: 50px; margin-left: 40px;}
 
-/*Centering the text, giving them a black background*/
+/*CENTERING THE TEXT, GIVING THEM BLACK BACKGROUND*/
 h2 {
     text-align: center;
-    background-color: black;
+    background-color: var(--color-03);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     padding: 5px 10px;
     text-align: center;
-    color: white;
+    color: var(--color-01);
 }
 
+/*SECTION 2*/
 .sao-luis {
     width: 350px;  
     display: block;
@@ -131,6 +134,67 @@ figcaption {
     text-align: center;
 }
 
+/*SECTION 3 BUTTONS*/
+#course-button {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    padding: 10px; 
+    margin: 10px;
+    gap: 10px;
+}
+
+button {
+    background-color: var(--color-06);
+    color: var(--color-01);
+    width: 200px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--color-05);
+    color: var(--color-03);
+}
+
 /*FOOTER*/
 
-footer {text-align: center; background-color: #4a184a; color: white; padding: 40px;}
+footer {
+    text-align: center; 
+    background-color: var(--color-06); 
+    color: var(--color-01); 
+    padding: 40px;
+}
+
+/*RESPONSIVE STYLES*/
+@media (min-width: 590px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+@media (max-width: 1153px) {
+	h1 {font-size: 25px;}
+
+    main {
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navBar ul {display: none;}
+
+    .navBar ul.navBar.open {display: flex; flex-direction: column;}
+
+    .hamburger {display: block;}
+
+    .navBar.open a {background: none; color: var(--font-color-01);}
+
+    .navBar.open a:hover {background: none; color: var(--button-color);}
+
+}
