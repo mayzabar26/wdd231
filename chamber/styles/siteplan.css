@@ -1,0 +1,107 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #000000;
+    --secondary-color: #bebeba ;
+    --accent1-color: #ffffff;
+    --accent2-color: #003049;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Poppins";
+    --paragraph-font: "Roboto Condensed", "Roboto Static";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #000000;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --nav-link-color: #ffffff;
+    --nav-background-color: #000000;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #bebeba;
+  }
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 18px;
+    text-align: center;
+}
+
+header {
+    background-color: var(--headline-color-on-white); 
+    color: var(--accent1-color);
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-align: center; 
+    margin: 0.7rem;
+    font-family: "Poppins";
+    font-size: 1.8rem;
+}
+
+h4 {margin: 0.8rem; font-size: 1.4rem;}
+
+.colored {
+    background-color: var(--headline-color-on-white);
+    color: var(--accent1-color);
+    padding: 1rem;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: var(--primary-color);
+  }
+
+  .secondary {
+    background-color: var(--secondary-color); 
+  }
+
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+
+  .accent2{
+    background-color: var(--accent2-color);
+  }
+  
+
+main {padding: 2rem;}
+
+hr {margin: 1rem;}
+
+img {
+    display: block; 
+    margin: 1.3rem auto; 
+    align-items: center; 
+    justify-content: center;
+    border: 2px solid #000000;
+    width: 70%; 
+    height: auto;
+}
+
+@media (max-width: 700px) {
+  header {
+      padding: 0.5rem; /* Ajuste o padding conforme necessário */
+  }
+  h1, h2, h3 {font-size: 17px;}
+
+  p {font-size: 15px;}
+}
