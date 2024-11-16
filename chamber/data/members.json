@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Slz Turismo",
+        "address": "Avenida dos Holandeses, Lote 2/5, Quadra 32, S/n, Ponta D’areia, São Luís - MA, 65071-380",
+        "phone": "(98) 98304-4843",
+        "website": "https://www.sHealthFirst Cllzturismo.com.br/",
+        "image": "https://ugc.production.linktr.ee/yqSag7oSEm45222RGUig_vkv271wo92kMETOD?io=true&size=avatar-v3_0",
+        "membership_level": 3,
+        "other_info": "Company that makes arrangements for travel and places to stay."
+    },
+    {
+        "name": "Sabor da Ilha",
+        "address": "R. Vinte e Oito, 08 - Recanto do Turu II, São José de Ribamar - MA, 65066-620",
+        "phone": " (98) 98451-8108",
+        "website": "https://sabordailhaslz.com.br/",
+        "image": "https://sabordailhaslz.com.br/wp-content/uploads/2023/12/logo-horizontal.png",
+        "membership_level": 4,
+        "other_info": "Company specialized in homemade jams."
+    },
+    {
+        "name": "Kairós Tur",
+        "address": "Rua Oswaldo Cruz, Nº 1091, Sala 25, 1º andar, Centro, São Luís-MA",
+        "phone": "(98) 98852-7434",
+        "website": "https://www.kairostur.com.br/",
+        "image": "https://static.wixstatic.com/media/b24429_546a82c214be4eeeb44c86e8354fe6ae~mv2.png/v1/fill/w_143,h_116,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20KAIROS%20TUR_%20branca.png",
+        "membership_level": 4,
+        "other_info": "Company that makes arrangements for travel and places to stay."
+    },
+    {
+        "name": "Dicumê Dindim Gourmet",
+        "address": "Avenida Este 203 - Praça do Viva Cidade Operária, S/N, São Luís, MA",
+        "phone": "(98) 98188-7836",
+        "website": "https://dindimdicume.menudino.com/",
+        "image": "https://files.menudino.com/cardapios/71594/logo.png",
+        "membership_level": 4,
+        "other_info": "Artisanal gourmet ice creams."
+    },
+    {
+        "name": "RH Confeitaria",
+        "address": "Only Online Services",
+        "phone": "(98) 98597-7105",
+        "website": "https://www.instagram.com/rayanehelenaconfeitaria/?locale=ru&hl=am-et",
+        "image": "https://ugc.production.linktr.ee/68f62a12-d87a-472f-9e0c-4e335b0e0ab5_IMG-2820.png?io=true&size=avatar-v3_0",
+        "membership_level": 2,
+        "other_info": "Homemade cakes and sweets company."
+    },
+    {
+        "name": "Black's Burguer",
+        "address": "Residencial ilhéus - R. Duzentos e Três Né, 2 - Cidade Operária, São Luís - MA, 65058-156",
+        "phone": "(98) 98906-0004",
+        "website": "https://www.instagram.com/blacks.burguer",
+        "image": "https://ugc.production.linktr.ee/iNOikEbBRyCxzy40F6jO_XXprVcU0cSV1G734?io=true&size=avatar-v3_0",
+        "membership_level": 2,
+        "other_info": "Restaurant specializing in hamburgers and craft drinks."
+    },
+    {
+        "name": "Açai do Biel",
+        "address": "Only Online Services",
+        "phone": "(98) 98 98235-0083",
+        "website": "https://www.instagram.com/acaibielslz/",
+        "image": "https://ugc.production.linktr.ee/9IemsTaXSKWgMewPTEll_ak04Bfi3h96H3RLF?io=true&size=avatar-v3_0",
+        "membership_level": 2,
+        "other_info": "Restaurant and Ice Cream shop."
+    }
+]

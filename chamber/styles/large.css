@@ -9,9 +9,9 @@
 
     ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
 
-    .company-name {font-size: 1.7rem; color: var(--color-02); text-align: left;}
+    .company-name {font-size: 1.7rem; color: var(--color-01); text-align: left;}
 
-    header {background-color: var(--color-01);}
+    header {background-color: var(--color-03);}
 
     footer {
         background-color: var(--color-04); 
@@ -48,4 +48,6 @@
     }
 
     nav {grid-template-rows: 1fr;}
+
+    .list {width: 600px;}
 }

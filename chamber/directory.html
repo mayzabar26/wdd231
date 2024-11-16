@@ -15,17 +15,22 @@
     <!--CDN for the icons in the footer-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!--Adding meta tags OG-->
+    <!--Open Graph Meta tags-->
     <meta property="og:title" content="Directory BYU assignment">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://www.exasol.com/app/uploads/2024/10/thumbnail-blog-what-is-a-relational-database-960x549.webp">
     <meta property="og:url" content="https://mayzabar26.github.io/wdd231/chamber/directory.html">
 
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script src="scripts/scripts.js" defer></script>
 
+    <!--NORMALIZE CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/display_members.js" defer></script>
 </head>
 
 <body>
@@ -45,8 +50,14 @@
         </ul>
     </nav>    
 
+    <!--BUSINESSES CARDS-->
     <main>
+        <div class="cardsViews">
+            <button id="gridBtn" aria-label="Grid View"></button>
+            <button id="listBtn" aria-label="List View"></button>
+        </div>
 
+        <div id="members"></div>
     </main>
     
     <!--Footer here-->

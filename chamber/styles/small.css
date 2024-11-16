@@ -23,8 +23,6 @@ header {
     align-items: center;
 }
 
-.logo-img {}
-
 .company-name {
     font-family: var(--font-family-03); 
     font-size: 1.2rem;
@@ -36,7 +34,9 @@ header {
 
 
 /*NAVIGATION TAGS*/
-nav {background-color: var(--color-03);}
+nav {background-color: var(--color-04);}
+
+.logo-img {margin: 10px;}
 
 #myButton::before {content: "=";}
 
@@ -61,25 +61,124 @@ ul.menuLinks li a { /*Will change all the default color of my links in the nav b
 
 li.current-menu-item a {background-color: rgb(0,0,0,0.2);} /*darker backgrouund in the current page*/
 
-ul.menuLinks {/*display: none;*/ list-style-type: none;} /*Will hide my menu for small devices. Also the list style will hide the dots for wide screen*/
+ul.menuLinks {list-style-type: none;} /*Will hide my menu for small devices. Also the list style will hide the dots for wide screen*/
+
 
 /*CSS FOR OPEN HAMBURGER BUTTON*/
 #myButton.open::before {content: "x";}
 
-/*ul.menuLinks.open {display: block;}*/
 
 /*ANIMATED TRANSITION*/
-nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
-}
+nav {display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.5s ease-out;}
 
 nav ul {overflow: hidden;}
 
-nav.open {
-    grid-template-rows: 1fr;
+nav.open {grid-template-rows: 1fr;}
+
+
+/*MAIN SECTION - BUSINESSES CARDS*/
+main {display: block; padding: 1rem; background-color: var(--color-01);}
+
+
+/*Cards' style*/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+	gap: 1.5rem;
+	margin: 10px;
 }
+
+.list {
+	display: flex;
+    flex-direction: column;
+	width: 450px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.list .member-card:nth-child(odd) {
+	background-color: var(--color-04);
+}
+
+.list .member-card:nth-child(even) {
+	background-color: rgb(112, 10, 10);
+}
+
+.cardsViews {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.cardsViews img {
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 1rem;
+}
+
+.list .cardsViews img {display: none;} /* remove image from the flow */
+
+.cardsViews p, a {padding-top: 1rem;}
+
+.member-card {
+    background-color: var(--color-04);
+    border-style: double; 
+    color: var(--color-01); /*Title's color*/
+    height: 330px;
+    padding: 20px;
+}
+
+.member-card img {
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2rem;
+    max-width: 150px; 
+    height: auto; 
+    display: block;
+}
+
+.member-card p, a {color: var(--color-01);} /*Will make the p color white*/
+
+.list .member-card img {display: none;}
+
+.list .member-card {font-size: 0.8rem; height: 110px;}
+
+#gridBtn { /*CSS FOR THE GRID BUTTON*/
+	background-image: url('../images/grid_icon.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 64px;
+	height: 64px;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+	padding: 1rem;
+}
+
+#gridBtn:hover {background-color: rgb(83, 173, 251);}
+
+#gridBtn.active {background-color: var(--color-03);}
+
+#listBtn { /*CSS FOR THE GRID BUTTON*/
+	background-image: url('../images/list_icon.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 64px;
+	height: 64px;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+	padding: 1rem;
+}
+
+#listBtn:hover {background-color: rgb(83, 173, 251);}
+
+#listBtn.active {background-color: var(--color-03)}
 
 
 /*FOOTER AND SOCIALS*/
