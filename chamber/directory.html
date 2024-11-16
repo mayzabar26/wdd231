@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory assignment - Mayza Barbosa</title>
+    <title>São Luís Chamber of Commerce</title>
     <meta name="description" content="WDD 231 - Week 2 Directory assignment">
     <meta name="author" content="Mayza Costa Barbosa">
-    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <!--Adding Favicon tag-->
-    <link rel="icon" href="favicon_02.ico">
+    <link rel="icon" href="favicon.ico">
+
+    <!--CDN for the icons in the footer-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!--Adding meta tags OG-->
     <meta property="og:title" content="Directory BYU assignment">
@@ -20,132 +24,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script src="scripts/ADICIONAR AQUI" defer></script>
+    <script src="scripts/scripts.js" defer></script>
 
 </head>
 
 <body>
+    <!--LOGO AND ANIMATED BUTTON-->
     <header>
-        <nav id="navbar">
-            <div class="container-menu">
-                <a href="directory.html" class="logo"><img src="images/sao_luis_chamer_logo_black-min.jpg" alt="São Luís Chamber of Commerce logo" width="150" class="logo-img" loading="lazy"></a>
-
-                <!--HAMBURGER BTN-->
-                <a id="hamburger-btn" href="#"></a>
-                <ul class="menu">
-                    <li class="btn"><a class="homepage" href="#">Home</a></li>
-                    <li class="btn"><a href="#">Discover</a></li>
-                    <li class="btn"><a href="#">Business Directory</a></li>
-                    <li class="btn"><a href="#">Joim</a></li>
-                </ul>
-            </div>
-        </nav>
+        <img class="logo-img" src="images/small_logo_red.png" alt="São Luís Chamber of Commerce logo" width="40" height="40" loading="lazy">
+        <span class="company-name">São Luís Chamber of Commerce</span>
+        <button id="myButton"></button> <!--HAMBURGER BUTTON-->
     </header>
 
-    <!--HERO IMAGE AND BUTTON-->
-    <section class="hero">
-        <img src="IMAGEM ABAIXO DO NAV BAR" alt="Events">
-        <button class="keynote-btn">Keynote Tickets</button>
-    </section>
+    <nav id="animateme">
+        <ul class="menuLinks"> <!--NAVBAR HERE-->
+            <li><a href="#" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="#" title="Directory">Directory</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+        </ul>
+    </nav>    
 
-    <!--MAIN SECTION-->
     <main>
-        <h1>Home</h1>
 
-        <!--INFOR CARD-->
-        <section class="info-section">
-            <div class="info_card">
-                <h2>Events</h2>
-                <div class="content"></div>
-            </div>
-
-            <!--WEATHER CARD-->
-            <div class="info-box-weather">
-                <h2>Current Weather</h2>
-                <p><span class="icon">⛅</span> 75°F</p>
-                <p>Partly Cloudy</p>
-                <p>High: 85°F</p>
-                <p>Low: 52°F</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30am</p>
-                <p>Sunset: 9:59pm</p>
-            </div>
-            
-            <!--FORECAST CARD-->
-            <div class="info-box-forecast">
-                <h2>Weather Forecast</h2>
-                <p>Today: <strong>90°F</strong></p>
-                <p>Wednesday: <strong>89°F</strong></p>
-                <p>Thursday: <strong>68°F</strong></p>
-            </div>
-        </section>
-
-        <!--BUSINESS CARDS-->
-        <section class="business-cards">
-            <!--FIRST CARD-->
-            <div class="business-card">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <img src="IMAGEM AQUI" alt="NOME DA EMPRESA">
-                <p><strong>EMAIL:</strong>info@gmail.com</p>
-                <p><strong>PHONE:</strong>800-555-1234</p>
-                <p><strong>URL:</strong>mybusiness.com</p>
-            </div>
-
-            <!--SECOND CARD-->
-            <div class="business-card">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <img src="IMAGEM AQUI" alt="NOME DA EMPRESA">
-                <p><strong>EMAIL:</strong>info@gmail.com</p>
-                <p><strong>PHONE:</strong>800-555-1234</p>
-                <p><strong>URL:</strong>mybusiness.com</p>
-            </div>
-
-             <!--SECOND CARD-->
-            <div class="business-card">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <img src="IMAGEM AQUI" alt="NOME DA EMPRESA">
-                <p><strong>EMAIL:</strong>info@gmail.com</p>
-                <p><strong>PHONE:</strong>800-555-1234</p>
-                <p><strong>URL:</strong>mybusiness.com</p>
-            </div>
-
-            <!--THIRD CARD-->
-            <div class="business-card">
-                <h3>Business Name</h3>
-                <p>Business Tag Line</p>
-                <img src="IMAGEM AQUI" alt="NOME DA EMPRESA">
-                <p><strong>EMAIL:</strong>info@gmail.com</p>
-                <p><strong>PHONE:</strong>800-555-1234</p>
-                <p><strong>URL:</strong>mybusiness.com</p>
-            </div> 
-        </section>
     </main>
-
-    <!--FOOTER HERE-->
+    
+    <!--Footer here-->
     <footer>
         <div class="footer-info">
-            <p>São Luís Chamber of Commerce</p>
+            <p><strong>São Luís Chamber of Commerce</strong></p>
             <p>123 Maplewood Avenue</p>
             <p>São Luís, MA 90210</p>
             <p>info@saoluis.org</p>
             <p>233-555-2300</p>
         </div>
 
+
         <div class="footer-social">
-            <a href="#" aria-label="YouTube" class="social-icon"><img src="images/icons/youtube.png" alt="YouTube Icon"></a>
-            <a href="#" aria-label="Twitter" class="social-icon"><img src="images/icons/twitter.png" alt="Twitter Icon"></a>
-            <a href="#" aria-label="LinkedIn" class="social-icon"><img src="images/icons/linkedin.png" alt="LinkedIn Icon"></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/" aria-label="Twitter" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
         </div>
+
 
         <div class="footer-js">
             <p>WDD231 Class Project</p>
             <p>Mayza Costa Barbosa</p>
-            <p>&copy; <span id="currentYear"></span></p>
+            <p>&copy;  <span id="currentYear"></span> São Luís Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
+
     </footer>
 </body>
 </html>
