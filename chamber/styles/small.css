@@ -81,6 +81,7 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 	gap: 1.5rem;
 	margin: 10px;
+    font-family: var(--font-family-03);
 }
 
 .list {
@@ -139,7 +140,7 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 
 .list .member-card img {display: none;}
 
-.list .member-card {font-size: 0.8rem; height: 110px;}
+.list .member-card {font-size: 0.8rem; height: 110px; font-family: var(--font-family-03);}
 
 #gridBtn { /*CSS FOR THE GRID BUTTON*/
 	background-image: url('../images/grid_icon.png');
