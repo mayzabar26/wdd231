@@ -32,7 +32,6 @@ header {
     font-weight: 600;
 }
 
-
 /*NAVIGATION TAGS*/
 nav {background-color: var(--color-04);}
 
@@ -63,10 +62,8 @@ li.current-menu-item a {background-color: rgb(0,0,0,0.2);} /*darker backgrouund 
 
 ul.menuLinks {list-style-type: none;} /*Will hide my menu for small devices. Also the list style will hide the dots for wide screen*/
 
-
 /*CSS FOR OPEN HAMBURGER BUTTON*/
 #myButton.open::before {content: "x";}
-
 
 /*ANIMATED TRANSITION*/
 nav {display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.5s ease-out;}
@@ -75,10 +72,8 @@ nav ul {overflow: hidden;}
 
 nav.open {grid-template-rows: 1fr;}
 
-
 /*MAIN SECTION - BUSINESSES CARDS*/
 main {display: block; padding: 1rem; background-color: var(--color-01);}
-
 
 /*Cards' style*/
 .grid {
@@ -179,7 +174,6 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 #listBtn:hover {background-color: rgb(83, 173, 251);}
 
 #listBtn.active {background-color: var(--color-03)}
-
 
 /*FOOTER AND SOCIALS*/
 footer {

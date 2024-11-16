@@ -8,12 +8,8 @@
     <meta name="author" content="Mayza Costa Barbosa">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-
-    <!--Adding Favicon tag-->
-    <link rel="icon" href="favicon.ico">
-
-    <!--CDN for the icons in the footer-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!--Adding Favicon tag-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!--CDN for the icons in the footer-->
 
     <!--Open Graph Meta tags-->
     <meta property="og:title" content="Directory BYU assignment">
@@ -28,14 +24,13 @@
 
     <!--NORMALIZE CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/display_members.js" defer></script>
 </head>
 
 <body>
-    <!--LOGO AND ANIMATED BUTTON-->
-    <header>
+    <header>     <!--LOGO AND ANIMATED BUTTON-->
+
         <img class="logo-img" src="images/small_logo_red.png" alt="São Luís Chamber of Commerce logo" width="40" height="40" loading="lazy">
         <span class="company-name">São Luís Chamber of Commerce</span>
         <button id="myButton"></button> <!--HAMBURGER BUTTON-->
@@ -50,8 +45,7 @@
         </ul>
     </nav>    
 
-    <!--BUSINESSES CARDS-->
-    <main>
+    <main> <!--BUSINESSES CARDS-->
         <div class="cardsViews">
             <button id="gridBtn" aria-label="Grid View"></button>
             <button id="listBtn" aria-label="List View"></button>
@@ -60,8 +54,7 @@
         <div id="members"></div>
     </main>
     
-    <!--Footer here-->
-    <footer>
+    <footer> <!--Footer here-->
         <div class="footer-info">
             <p><strong>São Luís Chamber of Commerce</strong></p>
             <p>123 Maplewood Avenue</p>
@@ -69,7 +62,6 @@
             <p>info@saoluis.org</p>
             <p>233-555-2300</p>
         </div>
-
 
         <div class="footer-social">
             <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon">
@@ -85,14 +77,12 @@
             </a>
         </div>
 
-
         <div class="footer-js">
             <p>WDD231 Class Project</p>
             <p>Mayza Costa Barbosa</p>
             <p>&copy;  <span id="currentYear"></span> São Luís Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
-
     </footer>
 </body>
 </html>

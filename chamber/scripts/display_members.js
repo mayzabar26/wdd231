@@ -5,7 +5,7 @@ const listBtn = document.querySelector("#listBtn");
 async function fetchMemberData() {
     try {
         const response = await fetch('data/members.json');
-        if (!response.ok) throw new Error("Erro ao carregar os dados.");
+        if (!response.ok) throw new Error("Error in updating data");
         const members = await response.json();
 
         members.forEach((member) => {
@@ -25,8 +25,14 @@ async function fetchMemberData() {
             membersDiv.appendChild(memberDiv);
         });
     } catch (error) {
-        console.error("Erro ao buscar os dados:", error);
+        console.error("Error in updating data:", error);
     }
+}
+
+function initializeGridView() {
+    membersDiv.classList.add("grid"); // Aplica a classe grid no #members
+    membersDiv.classList.remove("list"); // Remove a classe list (caso exista)
+    setActiveButton(gridBtn); // Deixa o botão Grid ativo
 }
 
 function setActiveButton(button) {
@@ -48,3 +54,4 @@ listBtn.addEventListener("click", () => {
 });
 
 fetchMemberData();
+initializeGridView()
