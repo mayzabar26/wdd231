@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 38rem) {
     #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
-
+    
     ul.menuLinks, ul.menuLinks.open {
         display: flex; 
         justify-content: end;} /*Will organize our menu links in the and of the bar*/
