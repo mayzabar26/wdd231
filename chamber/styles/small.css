@@ -135,12 +135,13 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
     height: auto; 
     display: block;
 }
+.member-card h3 {padding-bottom: 10px;}
 
 .member-card p, a {color: var(--color-01);} /*Will make the p color white*/
 
 .list .member-card img {display: none;}
 
-.list .member-card {font-size: 0.8rem; height: 110px; font-family: var(--font-family-03);}
+.list .member-card {font-size: 0.7rem; height: 110px; font-family: var(--font-family-03); padding: 15px;}
 
 #gridBtn { /*CSS FOR THE GRID BUTTON*/
 	background-image: url('../images/grid_icon.png');
