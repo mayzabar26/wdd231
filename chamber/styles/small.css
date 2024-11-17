@@ -82,6 +82,7 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 	gap: 1.5rem;
 	margin: 10px;
     font-family: var(--font-family-03);
+    font-size: 0.89rem;
 }
 
 .list {
