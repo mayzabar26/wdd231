@@ -1,0 +1,30 @@
+* {padding: 0; margin: 0; font-family: Poppins;}
+
+body {background-color: #fb607f;}
+
+main {
+    border: 4px solid #ffffff;
+    background-color: #033220;
+    border-radius: 40px;
+    text-align: center;
+    padding: 40px;
+    margin: 60px;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center; 
+    color: #033220; 
+    background-color: #ff91a4; 
+    padding: 40px;
+}
+
+p {padding: 5px; font-size: 1.5rem; color: #ffffff;}
+
+#current-temp {color: #83c760; font-weight: 600;}
+
+#weather-icon {width: 13%;}
+
+figcaption {color: #fff;}
+
+footer {text-align: center; padding-bottom: 10px; color: #033220; font-weight: 600;}
