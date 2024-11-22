@@ -19,7 +19,7 @@ header {
     grid-template-columns: 44px auto 44px;
     align-items: end;
     background-color: var(--color-01);
-    padding: 1rem;
+    padding: 0.4rem;
     align-items: center;
 }
 
