@@ -139,7 +139,7 @@
     }
     
     .business-container {
-        text-align: left; /* Alinha os textos à esquerda */
+        text-align: center; /* Alinha os textos à esquerda */
         max-width: 100%;
     }
 

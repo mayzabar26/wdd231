@@ -176,6 +176,17 @@ main {font-family: var(--font-family-03);}
     margin: 10px 0; /* Espaçamento entre a imagem e o texto */
 } 
 
+.business-card {
+    display: flex;
+    flex-direction: column; /* Exibe em coluna por padrão */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    justify-content: center;
+}
+
+.tag {font-style: italic;}
+
 /*FOOTER AND SOCIALS*/
 footer {
     background-color: var(--color-04); 
