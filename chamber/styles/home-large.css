@@ -143,4 +143,24 @@
         max-width: 100%;
     }
 
+    .sections-container {
+        display: flex; /*Will display the cards side by side */
+        /*flex-wrap: wrap; /* this is for small devices, maybe delete */
+        justify-content: space-between; /*Same space between the cards */
+        margin: 40px 0;
+        gap: 15px;
+    }
+    
+    /*style for each section*/
+    .events-section,
+    .weather-section,
+    .forecast-section {
+        flex: 1; /* Faz com que cada seção ocupe o mesmo espaço */
+        max-width: 30%; /* Limita a largura máxima de cada seção */
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow effect */
+        overflow: hidden;
+    }
+
 }
