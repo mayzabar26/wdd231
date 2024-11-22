@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>São Luís Chamber of Commerce</title>
-    <meta name="description" content="WDD 231 - Week 2 Directory assignment">
+    <title>Home Page</title>
+    <meta name="description" content="WDD 231 - Week 3 Home Page assignment">
     <meta name="author" content="Mayza Costa Barbosa">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
     <link rel="icon" href="favicon.ico"> <!--Adding Favicon tag-->
 
     <!--Open Graph Meta tags-->
-    <meta property="og:title" content="Directory BYU assignment">
+    <meta property="og:title" content="Home Page BYU assignment">
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://www.exasol.com/app/uploads/2024/10/thumbnail-blog-what-is-a-relational-database-960x549.webp">
     <meta property="og:url" content="https://mayzabar26.github.io/wdd231/chamber/directory.html">
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/display_members.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
 </head>
 
 <body>
@@ -33,22 +33,56 @@
 
     <nav id="animateme">
         <ul class="menuLinks"> <!--NAVBAR HERE-->
-            <li><a href="index.html" title="Home">Home</a></li>
-            <li class="current-menu-item"><a href="#" title="Directory">Directory</a></li>
+            <li class="current-menu-item"><a href="#" title="Home">Home</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
             <li><a href="#" title="Discover">Discover</a></li>
             <li><a href="#" title="Join">Join</a></li>
         </ul>
-    </nav>    
+    </nav>
 
-    <main> <!--BUSINESSES CARDS-->
-        <div class="cardsViews">
-            <button id="gridBtn" aria-label="Grid View"></button>
-            <button id="listBtn" aria-label="List View"></button>
+    <!--Slideshow container to show the work of 3 companies-->
+    <section class="slideshow-container">
+
+        <div class="my-slides">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/lencois_maranhenses.webp" alt="Lençóis Maranhenses" width="870">
+            <h1 class="company">Lençóis Maranhenses</h1>
+            <p class="c-text">Your Next adventure it's here!</p>
+            <a href="https://www.slzturismo.com.br/" class="button-more-info">Learn More</a>
         </div>
 
-        <div id="members"></div>
-    </main>
+        <div class="my-slides">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/geleias.webp" alt="Homemade jams Sabor da Ilha" width="870">
+            <h1 class="company">Homemade Jams Sabor da Ilha</h1>
+            <p class="c-text">Try all the new flavors available!</p>
+            <a href="https://sabordailhaslz.com.br/" class="button-more-info">Learn More</a>
+        </div>
+
+        <div class="my-slides">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/confeitaria.webp" alt="RH Bakery" width="870">
+            <h1 class="company">RH Confeitaria</h1>
+            <p class="c-text">Custom cakes and treats, made just for you!</p>
+            <a href="https://www.instagram.com/rayanehelenaconfeitaria/" class="button-more-info">Learn More</a>        
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <br>
     
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <main>
+
+    </main>
+
     <footer> <!--Footer here-->
         <div class="footer-info">
             <p><strong>São Luís Chamber of Commerce</strong></p>
