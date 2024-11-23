@@ -230,23 +230,23 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
     transition: transform 0.2s, box-shadow 0.2s;}
 
 .spotlight-card:hover {
-    transform: translateY(-5px); /* Move ligeiramente o card para cima ao passar o mouse */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
 }
 
 .spotlight-logo {
     width: 80px;
     height: 80px;
-    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    object-fit: cover; 
     margin-bottom: 15px;
-    border-radius: 50%; /* Torna a imagem circular */
-    border: 2px solid var(--color-03); /* Adiciona uma borda com a cor principal */
+    border-radius: 50%; 
+    border: 2px solid var(--color-03);
 }
 
 .spotlight-card h3 {
     font-family: var(--font-family-03);
     font-size: 1.2rem;
-    color: var(--color-04); /* Destaque na cor do texto */
+    color: var(--color-04);
     margin-bottom: 10px;
 }
 
@@ -271,7 +271,7 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
 }
 
 .spotlight-card a:hover {
-    background-color: var(--color-04); /* Cor alternativa no hover */
+    background-color: var(--color-04); 
 }
 
 
