@@ -138,110 +138,141 @@ h1, p {font-family: var(--font-family-03);}
 main {font-family: var(--font-family-03);}
 
 
-/******************EVENT, WEATHER AND FORECAST SECTION******************/
-.card {
-    background-color: #fff;
-    border-radius: 8px;
+/******************EVENT, WEATHER AND FORECAST CARDS******************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem; 
+}
+  
+section {
+    border: 1px solid #ccc;
+    background-color: var(--color-01);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 1rem;
+    flex: 1 1 30%; 
+    min-width: 200px;
 }
-
-.cards-section {
-    display: block;
-}
-
-.card.info-card {
-    width: 100%;
-    margin: 10px 0;
-}
-
-/******************STYLE FOR EVENTS******************/
-.events {
+  
+section h2 {
+    margin: 0;
+    background-color: #333;
+    color: var(--color-01);
+    padding: 0.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
-
-.events img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  
+.content {
+    font-size: 0.9rem;
+    flex-grow: 1; 
 }
 
-/******************STYLE FOR WEATHER******************/
-.conditions {
-    padding: 10px;
+.content img {
+    width: 100%; 
+    height: auto; 
+    margin: 0.5rem 0;
 }
 
-.conditions-table {
-    width: 100%;
-    border-collapse: collapse;
+@media (max-width: 37.99rem) {
+    section {
+      flex: 1 1 100%; /
+    }
 }
 
-.conditions-table td, .conditions-table th {
-    padding: 8px;
-    text-align: left;
-}
+h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
+.bold {text-align: center; color: var(--color-01); padding: 10px; padding-bottom: 15px; font-weight: 500;}
+.content {background-color: var(--color-04);}
+.weather-forecast img {width: 60px; height: auto; max-width: 100%;}
+.current-weather img {width: 60px; height: auto; max-width: 100%;}
 
-#weather-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
+.weather-forecast {text-align: center; }
+.current-weather {text-align: center; }
 
-.conditions-table th {
-    text-align: left;
-    font-weight: bold;
-}
+.content {font-size: 1rem; font-weight: 500;}
+
+.current-weather .content {padding: 20px; padding-bottom: 50px; align-items: center; line-height: 1.8;}
+
+.weather-forecast .content {justify-content: space-around; padding-bottom: 40px;}
+
 
 /******************BUSINESS CARD SECTION******************/
-.business-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0; /*Gap betweeen the sections*/
-    padding: 20px;
-    background-color: #f0f0f0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Super light shadow */
-    border-radius: 10px;
+#spotlight-container {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    margin: 0;
+    margin-top: 20px;
+    padding: 90px;
+    font-family: var(--font-family-03);
 }
 
-.business-container {
-    text-align: center; /*Centering elements */
-    font-family: var(--font-family-03); 
+.spotlight-card {
     max-width: 300px;
-    line-height: 1.5; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;}
+
+.spotlight-card:hover {
+    transform: translateY(-5px); /* Move ligeiramente o card para cima ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta a sombra ao passar o mouse */
 }
 
-.business-container h3 {
-    font-size: 1.5rem;
-    color: #333; 
+.spotlight-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    margin-bottom: 15px;
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid var(--color-03); /* Adiciona uma borda com a cor principal */
+}
+
+.spotlight-card h3 {
+    font-family: var(--font-family-03);
+    font-size: 1.2rem;
+    color: var(--color-04); /* Destaque na cor do texto */
     margin-bottom: 10px;
 }
 
-.business-container p {
-    font-size: 1rem;
-    color: #555;
+.spotlight-card p {
+    font-family: var(--font-family-01);
+    font-size: 0.9rem;
+    color: var(--color-02);
     margin: 5px 0;
 }
 
-.business-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; 
-    margin: 10px 0; 
-} 
-
-.business-card {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    justify-content: center;
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: var(--color-03);
+    color: var(--color-01);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.tag {font-style: italic;}
+.spotlight-card a:hover {
+    background-color: var(--color-04); /* Cor alternativa no hover */
+}
 
 
 /******************FOOTER AND SOCIALS******************/

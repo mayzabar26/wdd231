@@ -23,6 +23,7 @@
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/carousel.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
@@ -70,99 +71,37 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </section>
 
-
-    <main><!--MAIN WITH SECTIONS-->
-        <section class="card info-card"> <!-- Events Card -->
-            <h2>Events</h2>
-            <div class="events">
-                <h3>Cultural Market</h3>
-                <img src="images/feira_do_livro.webp" alt="Traditional Book Festival" width="800" height="318" loading="lazy">
-                <p class="bold">20 -23 December 2024</p>
-                <p>Stalls open 10am - 11pm</p>
-            </div>
+    <main><div class="container"><!--EVENTS CARD-->
+        <section class="events">
+          <h2>Events</h2>
+          <div class="content">
+            <h3>Book Festival</h3>
+            <img src="images/feira_do_livro.webp" alt="Book Festival" loading="lazy" width="800" height="318">
+            <p class="bold">20 -23 December 2024 <br> Stalls open 5pm - 9pm</p>
+          </div>
         </section>
 
-        <!-- Current Weather Card -->
-        <section class="card info-card">
-            <h2>São Luís Weather</h2>
-            <div class="conditions">
-                <figure id="weather-main">
-                    <img id="weather-icon" src="" alt="">
-                    <span class="bold" id="current-temp"></span>
-                    <figcaption></figcaption>
-                </figure>
-                
-                <table class="conditions-table">
-                    <tr class="visually-hidden">
-                        <th>Condition:</th>
-                        <th>Value</th>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Humidity:</td>
-                        <td><span id="current-humid"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Wind Speed:</td>
-                        <td><span id="wind-speed"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Pressure:</td>
-                        <td><span id="pressure"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Visibility:</td>
-                        <td><span id="visibility"></span></td>
-                    </tr>
-                </table>
-            </div>
+        <section class="current-weather">
+          <h2>Current Weather</h2>
+          <div class="content">
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+          </div>
         </section>
 
-        <!-- Forecast Weather Card -->
-        <section class="card info-card">
-            <h2>3-Day Forecast</h2>
-            <div class="conditions">
-                <table class="conditions-table">
-                    <tr class="visually-hidden">
-                        <th>Day</th>
-                        <th>Temperature</th>
-                    </tr>
-                    <tr>
-                        <td id="today" class="bold center" colspan="2">Today</td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Max Temp:</td>
-                        <td id="today-temp-high"></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Min Temp:</td>
-                        <td id="today-temp-low"></td>
-                    </tr>
-                    <tr>
-                        <td id="tomorrow" class="bold center" colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Temp:</td>
-                        <td id="tomorrow-temp-high"></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Outlook:</td>
-                        <td id="tomorrow-temp-low"></td>
-                    </tr>
-                    <tr>
-                        <td id="after-tomorrow" class="bold center" colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Temp:</td>
-                        <td id="after-tomorrow-temp-high"></td>
-                    </tr>
-                    <tr>
-                        <td class="right-justify">Outlook:</td>
-                        <td id="after-tomorrow-temp-low"></td>
-                    </tr>
-                </table>
-            </div>
+        <section class="weather-forecast">
+          <h2>Forecast</h2>
+          <div class="content">
+            <p>Today: <strong>90°F</strong></p>
+            <p>Wednesday: <strong>89°F</strong></p>
+            <p>Thursday: <strong>68°F</strong></p>
+          </div>
         </section>
-        <section id="spotlight-cards" class="cards-section"></section>
+      </div>
+      
+      <section id="spotlight-container"></section>
     </main>
     
     

@@ -21,6 +21,7 @@ function getLastModified() {
     document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 }
 
+
 // Calling functions
 getCurrentYear();
 getLastModified();
