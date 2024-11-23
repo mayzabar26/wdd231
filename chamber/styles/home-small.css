@@ -13,7 +13,8 @@
     --color-04: #BC0E0E;
 }
 
-/*HEADER, TITLE AND LOGO IMG*/
+
+/******************HEADER, TITLE AND LOGO IMG******************/
 header {
     display: grid;
     grid-template-columns: 44px auto 44px;
@@ -32,7 +33,8 @@ header {
     font-weight: 600;
 }
 
-/*NAVIGATION TAGS*/
+
+/******************NAVIGATION TAGS******************/
 nav {background-color: var(--color-04);}
 
 .logo-img {margin: 10px;}
@@ -61,7 +63,8 @@ ul.menuLinks li a { /*Will change all the default color of my links in the nav b
 li.current-menu-item a {background-color: rgb(0,0,0,0.2);} /*darker backgrouund in the current page*/
 ul.menuLinks {list-style-type: none;} /*Will hide my menu for small devices. Also the list style will hide the dots for wide screen*/
 
-/*CSS FOR OPEN HAMBURGER BUTTON*/
+
+/******************CSS FOR OPEN HAMBURGER BUTTON******************/
 #myButton.open::before {content: "x";}
 
 /*ANIMATED TRANSITION*/
@@ -70,7 +73,7 @@ nav ul {overflow: hidden;}
 nav.open {grid-template-rows: 1fr;}
 
 
-/*Slideshow container*/
+/******************SLIDESHOW CONTAINER******************/
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -78,12 +81,9 @@ nav.open {grid-template-rows: 1fr;}
 }
 
 .my-slides img {width: 100%; height: 500px;}
+.my-slides, .numbertext {display: none;} /*Hide the images by default*/
 
-/*Hide the images by default*/
-.my-slides, .numbertext {display: none;}
-
-/*Style for the previous and next buttons*/
-.prev, .next {
+.prev, .next { /*Style for the previous and next buttons*/
     position: absolute;
     top: 50%;
     padding: 16px;
@@ -100,8 +100,7 @@ nav.open {grid-template-rows: 1fr;}
 .next {right: 0;}
 .prev:hover, .next:hover {background-color: rgba(0, 0, 0, 1);}
 
-/*Style for the dots/circles*/
-.dot {
+.dot {/*Style for the dots/circles*/
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -114,7 +113,7 @@ nav.open {grid-template-rows: 1fr;}
 .active {background-color: #717171;}
 
 
-/*learn more button, h1 and p*/
+/******************LEARN MORE BUTTON, H1 AND P******************/
 .button-more-info {
     display: inline-block;
     padding: 10px 30px;
@@ -135,56 +134,67 @@ h1, p {font-family: var(--font-family-03);}
 .join-group {color: var(--color-01); text-align: center; font-size: 12px; margin-top: -15px;}
 
 
-/*MAIN*/
+/******************MAIN******************/
 main {font-family: var(--font-family-03);}
 
-/*EVENT, WEATHER AND FORECAST SECTION*/
-.events-section,
-.weather-section,
-.forecast-section {
-    flex: 1; /*Same size for the cards */
-    max-width: 100%; /*Limiting the cards' space */
-    background-color: #f0f0f0;
+
+/******************EVENT, WEATHER AND FORECAST SECTION******************/
+.card {
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Card shadow effect */
-    overflow: hidden; /* Garante que o conteúdo extra não ultrapasse os limites */
-    margin: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
 }
 
-.events-section h2,
-.weather-section h2,
-.forecast-section h2 {
-    background-color: #333; 
-    color: var(--color-01);
-    padding: 10px;
-    margin: 0;
+.cards-section {
+    display: block;
+}
+
+.card.info-card {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/******************STYLE FOR EVENTS******************/
+.events {
     text-align: center;
-    font-size: 1.2rem; 
-    text-transform: uppercase;
 }
 
-.date {color: var(--color-02);}
-
-.events-section .events-container,
-.weather-section .weather-container,
-.forecast-section .forecast-container {
-    padding: 15px;
-    text-align: center;
-    font-size: 1rem; 
-    line-height: 1.5;
-}
-
-/*Images inside the cards */
-.events-section img,
-.weather-section img,
-.forecast-section img {
-    width: 100%; 
+.events img {
+    width: 100%;
     height: auto;
-    margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-/*BUSINESS CARD SECTION*/
+/******************STYLE FOR WEATHER******************/
+.conditions {
+    padding: 10px;
+}
+
+.conditions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.conditions-table td, .conditions-table th {
+    padding: 8px;
+    text-align: left;
+}
+
+#weather-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.conditions-table th {
+    text-align: left;
+    font-weight: bold;
+}
+
+/******************BUSINESS CARD SECTION******************/
 .business-card {
     display: flex;
     justify-content: center;
@@ -197,34 +207,34 @@ main {font-family: var(--font-family-03);}
 }
 
 .business-container {
-    text-align: center; /* Centraliza os elementos */
-    font-family: 'Roboto', sans-serif; /* Tipografia moderna */
-    max-width: 300px; /* Limita a largura máxima */
-    line-height: 1.5; /* Melhora a legibilidade */
+    text-align: center; /*Centering elements */
+    font-family: var(--font-family-03); 
+    max-width: 300px;
+    line-height: 1.5; 
 }
 
 .business-container h3 {
     font-size: 1.5rem;
-    color: #333; /* Cor para título */
+    color: #333; 
     margin-bottom: 10px;
 }
 
 .business-container p {
     font-size: 1rem;
-    color: #555; /* Cor para texto */
+    color: #555;
     margin: 5px 0;
 }
 
 .business-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Arredonda os cantos das imagens */
-    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
+    border-radius: 8px; 
+    margin: 10px 0; 
 } 
 
 .business-card {
     display: flex;
-    flex-direction: column; /* Exibe em coluna por padrão */
+    flex-direction: column; 
     gap: 20px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -233,7 +243,8 @@ main {font-family: var(--font-family-03);}
 
 .tag {font-style: italic;}
 
-/*FOOTER AND SOCIALS*/
+
+/******************FOOTER AND SOCIALS******************/
 footer {
     background-color: var(--color-04); 
     padding: 1rem;
@@ -245,11 +256,7 @@ footer {
     font-size: 0.8rem;
 }
 
-.footer-info, 
-.footer-social, 
-.footer-js {
-    padding: 5px 0; /*Will reduce internal spacing*/
-}
+.footer-info, .footer-social, .footer-js {padding: 5px 0; /*Will reduce internal spacing*/}
 
 .footer-social {
     display: flex;
