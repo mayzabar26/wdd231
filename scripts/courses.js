@@ -113,7 +113,67 @@ function show_courses(filterChoice) {
     document.getElementById("credits").innerHTML = `<h3>Credits: ${totalCredits - incompleteCredits} / ${totalCredits}</h3>`;
 }
 
-// Event listeners for the buttons
+
+//Event listeners for the buttons
 allButton.addEventListener('click', () => show_courses("all"));
 cseButton.addEventListener('click', () => show_courses("CSE"));
 wddButton.addEventListener('click', () => show_courses("WDD"));
+
+
+//DIALOG HERE
+//Selectiong elements from the dialog
+const dialog = document.getElementById("course-info");
+const dialogContent = document.getElementById("dialog-content");
+const closeDialogButton = document.getElementById("close-dialog");
+
+//Close event listener for the dialog
+closeDialogButton.addEventListener("click", () => dialog.close());
+
+//Changing `show_courses` function to add the event listener to the courses
+function show_courses(filterChoice) {
+    let filterCourses = [];
+
+    //Filter courses based on choice
+    if (filterChoice === "all") {
+        filterCourses = courses;
+    } else {
+        filterCourses = courses.filter(course => course.subject === filterChoice);
+    }
+
+    //Generate HTML from filtered courses
+    const allCourses = filterCourses.map((course, index) => {
+        const courseClass = course.completed ? "course-card completed" : "course-card not-completed";
+        return `<div class="${courseClass}" data-index="${index}">
+        <h3>${course.subject} ${course.number}</h3></div>`;
+    }).join(""); 
+    document.getElementById("content").innerHTML = allCourses;
+
+    //Add click event on courses to open dialog
+    document.querySelectorAll(".course-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const index = card.getAttribute("data-index");
+            const course = filterCourses[index];
+            show_course_details(course);
+        });
+    });
+
+    //Calculate and display credits
+    const totalCredits = filterCourses.reduce((totalAmount, course) => totalAmount + course.credits, 0);
+    const incompleteCredits = filterCourses.filter(course => !course.completed).reduce((totalAmount, course) => totalAmount + course.credits, 0);
+
+    document.getElementById("credits").innerHTML = `<h3>Credits: ${totalCredits - incompleteCredits} / ${totalCredits}</h3>`;
+}
+
+//Function to display the info
+function show_course_details(course) {
+    dialogContent.innerHTML = `
+        <h2>${course.title}</h2>
+        <p><strong>Subject:</strong> ${course.subject}</p>
+        <p><strong>Number:</strong> ${course.number}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+    `;
+    dialog.showModal();
+}

@@ -254,3 +254,15 @@ footer {
     .course-card {width: 370px;}
 
 }
+
+
+/*********DIALOG CSS*********/
+dialog {width: 40rem;}
+
+#course-info {margin: 50px; border: none; margin-left: 300px; border-radius: 20px;}
+
+#close-dialog {margin-left: 420px; margin-bottom: 10px;}
+
+p {padding: 8px;}
+
+::backdrop {background-color: rgba(48, 18, 38, 0.9);}
