@@ -121,7 +121,7 @@ wddButton.addEventListener('click', () => show_courses("WDD"));
 
 
 //DIALOG HERE
-//Selectiong elements from the dialog
+//Selectiong elements from the dialog element on the HTML
 const dialog = document.getElementById("course-info");
 const dialogContent = document.getElementById("dialog-content");
 const closeDialogButton = document.getElementById("close-dialog");
@@ -133,7 +133,7 @@ closeDialogButton.addEventListener("click", () => dialog.close());
 function show_courses(filterChoice) {
     let filterCourses = [];
 
-    //Filter courses based on choice
+    //Filter courses based on the selected category
     if (filterChoice === "all") {
         filterCourses = courses;
     } else {
