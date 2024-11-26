@@ -120,6 +120,8 @@ cseButton.addEventListener('click', () => show_courses("CSE"));
 wddButton.addEventListener('click', () => show_courses("WDD"));
 
 
+
+
 //DIALOG HERE
 //Selectiong elements from the dialog element on the HTML
 const dialog = document.getElementById("course-info");
