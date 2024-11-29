@@ -1,0 +1,62 @@
+/*FILE FOR WIDE SCREEN*/
+:root {
+    --font-family-01: "Roboto";
+    --font-family-02: "Open Sans";
+    --font-family-03: "Poppins";
+  
+    --color-01: #ffffff;
+    --color-02: #000000;
+    --color-03: #1E4AC4;
+    --color-04: #BC0E0E;
+}
+
+@media only screen and (min-width: 38rem) {
+    #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex; 
+        justify-content: end;} /*Will organize our menu links in the and of the bar*/
+
+    ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
+
+    .company-name {font-size: 1.7rem; color: var(--color-01); text-align: left;}
+
+    header {background-color: var(--color-03);}
+
+    footer {
+        background-color: var(--color-04); 
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 1rem;
+    }
+    
+    .footer-info {padding: 20px; text-align: left;}
+    
+    .footer-js {padding: 20px; text-align: right;}
+    
+    #currentYear, #lastModified, p {color: var(--color-01);}
+    
+    #lastModified {font-weight: 700; color: var(--color-01);}
+
+    .footer-social {
+        display: flex;
+        justify-content: center; /*Place the icons in the center horizontally.*/
+        gap: 20px; /*Space between the icons */
+        padding: 10px 0;
+        margin-top: 16px;
+    }
+    
+    .social-icon {
+        color: var(--color-01);
+        font-size: 2rem; /* Icons' size */
+        transition: color 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .social-icon:hover {
+        color: var(--color-02);
+    }
+
+    nav {grid-template-rows: 1fr;}
+}
