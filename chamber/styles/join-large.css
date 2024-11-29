@@ -10,7 +10,7 @@
     --color-04: #BC0E0E;
 }
 
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40rem) {
     #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
 
     ul.menuLinks, ul.menuLinks.open {
@@ -59,4 +59,115 @@
     }
 
     nav {grid-template-rows: 1fr;}
+
+    /******************FORM DESIGN******************/
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        background-color: var(--color-01);
+    }
+
+    h1 {text-align: left; color: var(--color-02); padding-left: 70px;}
+    
+    .section-container {
+        border: solid; 
+        padding: 15px;
+        margin: 10px;
+        background-color: var(--color-04);
+        color: var(--color-01);
+        border-radius: 15px;
+    }
+
+    .membership-form section {width: 100%;}
+
+    /* Formulário de inscrição */
+    .membership-form {
+        width: 45%;
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: var(--color-01);
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container select {
+        padding: 0 5px;
+        border-radius: 5px;
+        border: var(--color-01) solid 2px;
+        width: 90%;
+        margin: 7px;
+    }
+
+    .membership-form h2 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        margin-bottom: 15px;
+    }
+
+    .form-container label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-container input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid var(--color-01);
+        border-radius: 5px;
+    }
+
+    .btn {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: var(--color-04);
+        color: var(--color-01);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {background-color: var(--color-02); color: var(--color-01);}
+
+    /*Membership cards*/
+    .membership-cards {
+        width: 45%;
+    }
+
+    .membership-cards h2 {
+        margin-bottom: 20px;
+    }
+
+    .membership-container {
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: var(--color-01);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .membership-container h3 {
+        margin-bottom: 10px;
+    }
+
+    .btnDetails {
+        padding: 8px 15px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btnDetails:hover {background-color: var(--color-04); color: var(--color-01);}
+
+    /*new code here*/
+
+
 }

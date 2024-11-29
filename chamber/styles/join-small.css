@@ -73,29 +73,121 @@ nav ul {overflow: hidden;}
 nav.open {grid-template-rows: 1fr;}
 
 
+/******************MAIN******************/
+main {
+    background-color: var(--color-03); 
+    font-family: var(--font-family-03); 
+    color: var(--color-02);
+    padding: 10px;
+}
+
+h1 {text-align: center; color: var(--color-01);}
 
 
+/******************FORM DESIGN******************/
+.join-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.section-container {
+    border: solid; 
+    padding: 15px;
+    margin: 5px;
+    background-color: var(--color-01);
+    border-radius: 15px;
+}
+
+.form-section {border-top: var(--color-04) solid 1px;}
+
+.membership-form section {width: 100%;}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input,
+.form-container select {height: 1.6rem; font-size: 0.8rem; text-align: left;}
+
+#business-description, textarea {font-size: 0.8rem; text-align: left; padding: 5px;}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    padding: 0 5px;
+    border-radius: 5px;
+    border: var(--color-02) solid 2px;
+    width: 90%;
+    margin: 7px;
+}
 
 
+/******************SUBMIT BUTTON AND DETAILS BUTTON******************/
+.btn {
+    width: 100%; 
+    padding: 10px;
+    background-color: var(--color-02);
+    margin: 10px;
+    color: var(--color-01);
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.btn:hover {background-color: var(--color-04);}
 
+/******************ICON******************/
+.membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 10px;
+}
 
+.membership-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    background-color: var(--color-01);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 550px; 
+}
 
+.membership-container img {
+    margin-bottom: 10px; 
+}
 
+.btnDetails {
+    width: 100%; 
+    padding: 10px;
+    background-color: var(--color-02);
+    color: var(--color-01);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btnDetails:hover {background-color: #BC0E0E;}
 
 
 /******************FOOTER AND SOCIALS******************/
