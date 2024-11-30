@@ -11,163 +11,143 @@
 }
 
 @media only screen and (min-width: 40rem) {
-    #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
+    #myButton {
+        display: none;
+    } /* This will make our hamburger menu close for wide screens */
 
     ul.menuLinks, ul.menuLinks.open {
-        display: flex; 
-        justify-content: end;} /*Will organize our menu links in the and of the bar*/
+        display: flex;
+        justify-content: flex-end; /* Organizes menu links at the end of the bar */
+    }
 
-    ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
-    .company-name {font-size: 1.7rem; color: var(--color-01); text-align: left;}
+    .company-name {
+        font-size: 1.7rem;
+        color: var(--color-01);
+        text-align: left;
+    }
 
-    header {background-color: var(--color-03);}
+    header {
+        background-color: var(--color-03);
+    }
 
     footer {
-        background-color: var(--color-04); 
+        background-color: var(--color-04);
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         font-size: 1rem;
     }
-    
-    .footer-info {padding: 20px; text-align: left;}
-    
-    .footer-js {padding: 20px; text-align: right;}
-    
-    #currentYear, #lastModified, p {color: var(--color-01);}
-    
-    #lastModified {font-weight: 700; color: var(--color-01);}
+
+    .footer-info {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .footer-js {
+        padding: 20px;
+        text-align: right;
+    }
+
+    #currentYear, #lastModified, p {
+        color: var(--color-01);
+    }
+
+    #lastModified {
+        font-weight: 700;
+        color: var(--color-01);
+    }
 
     .footer-social {
         display: flex;
-        justify-content: center; /*Place the icons in the center horizontally.*/
-        gap: 20px; /*Space between the icons */
+        justify-content: center; /* Place the icons in the center horizontally */
+        gap: 20px; /* Space between the icons */
         padding: 10px 0;
         margin-top: 16px;
     }
-    
+
     .social-icon {
         color: var(--color-01);
         font-size: 2rem; /* Icons' size */
         transition: color 0.3s ease;
         text-decoration: none;
     }
-    
+
     .social-icon:hover {
         color: var(--color-02);
     }
 
-    nav {grid-template-rows: 1fr;}
+    nav {
+        grid-template-rows: 1fr;
+    }
 
     /******************FORM DESIGN******************/
-    main {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+    main {background-color: var(--color-01);}
+
+    .join-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
         gap: 20px;
-        background-color: var(--color-01);
-    }
-
-    h1 {text-align: left; color: var(--color-02); padding-left: 70px;}
-    
-    .section-container {
-        border: solid; 
         padding: 15px;
-        margin: 10px;
-        background-color: var(--color-04);
-        color: var(--color-01);
-        border-radius: 15px;
     }
 
-    .membership-form section {width: 100%;}
-
-    /* Formulário de inscrição */
     .membership-form {
-        width: 45%;
         padding: 20px;
-        border: 1px solid;
-        border-radius: 10px;
+        border: 1px solid var(--color-02);
+        border-radius: 8px;
         background-color: var(--color-01);
     }
 
-    .form-container input,
-    .form-container textarea,
-    .form-container select {
-        padding: 0 5px;
-        border-radius: 5px;
-        border: var(--color-01) solid 2px;
-        width: 90%;
-        margin: 7px;
-    }
-
-    .membership-form h2 {
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .form-container {
-        margin-bottom: 15px;
-    }
-
-    .form-container label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .form-container input {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid var(--color-01);
-        border-radius: 5px;
-    }
-
-    .btn {
-        display: block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: var(--color-04);
-        color: var(--color-01);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .btn:hover {background-color: var(--color-02); color: var(--color-01);}
-
-    /*Membership cards*/
+    h1 {color: var(--color-02);}
+    
     .membership-cards {
-        width: 45%;
-    }
-
-    .membership-cards h2 {
-        margin-bottom: 20px;
-    }
-
-    .membership-container {
-        padding: 15px;
-        margin-bottom: 15px;
-        background-color: var(--color-01);
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .membership-container h3 {
-        margin-bottom: 10px;
-    }
+        display: grid; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 20px; 
+        padding: 20px;
+        border: 1px solid var(--color-02);
+        border-radius: 8px;
+        background-color: var(--color-03);
+    
+     }
 
     .btnDetails {
-        padding: 8px 15px;
-        background-color: #000;
-        color: #fff;
-        border: none;
+        background-color: var(--color-03);
+        color: var(--color-01);
+        border: 1px solid #939090;
+        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
+        transition: background-color 0.3s;
     }
 
-    .btnDetails:hover {background-color: var(--color-04); color: var(--color-01);}
+    .btnDetails:hover {
+        background-color: var(--color-04);
+    }
 
-    /*new code here*/
+    .btn {background-color: var(--color-03);}
 
+    /*ANIMATION TO THE CARDS*/
+    .membership-container:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        background-color: rgb(216, 236, 249);
+    }
 
+    .membership-container img {animation: pulse 1.5s infinite;}
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1); 
+        }
+        50% {
+            transform: scale(1.1); 
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
 }

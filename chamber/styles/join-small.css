@@ -190,6 +190,28 @@ h1 {text-align: center; color: var(--color-01);}
 .btnDetails:hover {background-color: #BC0E0E;}
 
 
+/******************ANIMATION/TRANSITION******************/
+.membership-container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(216, 236, 249);
+}
+
+.membership-container img {animation: pulse 1.5s infinite;}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 /******************FOOTER AND SOCIALS******************/
 footer {
     background-color: var(--color-04); 
