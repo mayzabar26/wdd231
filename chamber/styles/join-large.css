@@ -130,7 +130,7 @@
 
     .btn {background-color: var(--color-03);}
 
-    /*ANIMATION TO THE CARDS*/
+    /******************ANIMATION TO THE CARDS******************/
     .membership-container:hover {
         transform: scale(1.05); 
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
@@ -150,4 +150,109 @@
             transform: scale(1);
         }
     }
+
+    /******************THANK YOU PAGE******************/
+    .thank-you-container {
+        text-align: center;
+        background-color: rgb(242, 242, 242);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    /******************TOP AND BOTTOM BACKGROUND******************/
+    .top-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background-color: var(--color-03);
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        z-index: 1;
+    }
+    
+    .bottom-background {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background-color: var(--color-04);
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        z-index: 1;
+    }
+    
+    /******************MAIN CONTENT******************/
+    main.content {z-index: 2; max-width: 600px; padding: 20px;}
+    
+    /*CHECK ICON */
+    .check-icon img {width: 50px; height: 50px; margin-bottom: 10px;}
+    
+    /*TITLE AND MESSAGE*/
+    .ty {font-size: 2rem; color: #333; margin-bottom: 10px;}
+    
+    .msg {font-size: 1rem; color: #555; margin-bottom: 30px;}
+    
+    /*BOXES STYLE*/
+    .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        background: var(--color-02);
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    
+    /* Ícones de redes sociais */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .icon {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        
+    }
+    
+    /*RETURN WEBSITE BUTTON*/
+    .button {
+        display: inline-block;
+        padding: 13px 15px;
+        margin: 8px;
+        background-color: var(--color-03);
+        color: var(--color-01);
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    .button:hover {
+        background-color: var(--color-04);
+    }  
+
+    .box-tex {color: var(--color-01);}
+
+   
+
 }

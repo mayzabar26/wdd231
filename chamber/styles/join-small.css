@@ -235,3 +235,65 @@ footer {
 #currentYear, #lastModified, p {color: var(--color-01);}
 
 #lastModified {font-weight: 700; color: var(--color-01);}
+
+
+/******************THANK YOU PAGE******************/
+.thank-you-container {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-01); 
+}
+
+.check-icon {margin: 15px;}
+
+.thank-you-container img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.ty {
+    font-size: 24px; 
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.msg {
+    font-size: 14px; 
+    line-height: 1.5;
+    color: var(--color-01);
+    padding-bottom: 20px; /*aumenta o espaço de baixo da mensagem*/
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+}
+
+.box-tex {margin-top: 20px; color: var(--color-01);}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-02);
+    background-color: var(--color-01);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.button:hover {background-color: var(--color-02); color: var(--color-01);}
+
+.box {background-color: var(--color-04); width: 100%; padding: 5px;}
