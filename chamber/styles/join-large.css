@@ -171,7 +171,6 @@
         width: 50%;
         height: 50%;
         background-color: var(--color-03);
-        clip-path: polygon(0 0, 100% 0, 0 100%);
         z-index: 1;
     }
     
@@ -182,7 +181,6 @@
         width: 50%;
         height: 50%;
         background-color: var(--color-04);
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
         z-index: 1;
     }
     

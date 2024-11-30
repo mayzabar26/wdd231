@@ -239,8 +239,8 @@ footer {
 
 /******************THANK YOU PAGE******************/
 .thank-you-container {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     width: 100%;
     text-align: center;
     background-color: var(--color-01); 
