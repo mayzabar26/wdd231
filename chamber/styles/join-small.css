@@ -246,7 +246,7 @@ footer {
     background-color: var(--color-01); 
 }
 
-.check-icon {margin: 15px;}
+.check-icon {margin: 10px;}
 
 .thank-you-container img {
     width: 80px;
@@ -255,31 +255,31 @@ footer {
 
 .ty {
     font-size: 24px; 
-    margin-bottom: 15px;
-    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-top: -5px;
 }
 
 .msg {
     font-size: 14px; 
     line-height: 1.5;
     color: var(--color-01);
-    padding-bottom: 20px; /*aumenta o espaço de baixo da mensagem*/
+    padding-bottom: 5px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 10px; 
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .social-icons img {
-    width: 40px; 
-    height: 40px;
+    width: 30px; 
+    height: 30px;
     border-radius: 50%;
 }
 
-.box-tex {margin-top: 20px; color: var(--color-01);}
+.box-tex {margin-top: 5px; color: var(--color-01);}
 
 .button {
     display: inline-block;
@@ -291,9 +291,15 @@ footer {
     background-color: var(--color-01);
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin: 10px;
+    margin: 9px;
 }
 
 .button:hover {background-color: var(--color-02); color: var(--color-01);}
 
 .box {background-color: var(--color-04); width: 100%; padding: 5px;}
+
+
+/******************THANK YOU PAGE RESULTS******************/
+#results {text-align: justify; padding: 20px; margin-left: 20px;}
+
+a {color: var(--color-01);}

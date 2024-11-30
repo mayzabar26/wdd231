@@ -253,6 +253,11 @@
 
     .box-tex {color: var(--color-01);}
 
+    /*RETURN WEBSITE BUTTON*/
+    #results {margin-top: -40px;}
+    
+    p {color: var(--color-02);}
+
    
 
 }

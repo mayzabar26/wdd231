@@ -1,47 +1,54 @@
-//Selecting the const
-const currentUrl = window.location.href;// Obtém o endereço completo da página atual.
+//Selecting the current URL of the page
+const currentUrl = window.location.href; // Gets the full address of the current page.
 
+//Splitting the URL into two parts at the "?" to identify the user's form data
+const everything = currentUrl.split('?');
 
-//Dividindo a URL em duas partes, separando no ponto de interrogação "?" 
-//para identificar as informações do usuário.
-const everything=currentUrl.split('?') 
+//Grabbing only the second half of the URL, which contains the user's form data
+let formData = everything[1].split('&'); 
+//everything[1]: Retrieves the second part containing the user's data (index 1 because indexing starts at 0).
+//split('&'): The "&" symbol separates the data, so we use it to divide the data into an array of elements.
 
-
-//Grab just the second half
-let formData = everything[1].split('&') 
-//everything[1]: Pegando a segunda parte com as informações do user. O número 1 representa a segunda parte pois a conta inicia em '0'.
-//split('&'): O "&" é o que divide as informações, então vamos usar para dividir as informações em 7 partes.
-//As informações serão armazenadas em um array (lista).
-
-
-//Como as informações serão exibidas várias vezes dentro do <div id="results"></div>, 
-//criamos uma função chamada 'show' para facilitar o acesso e manipulação desses dados.
-function show(key) { //A função recebe o parâmetro 'cup', que é o nome do dado que queremos buscar.
+//Function to retrieve a specific key value from the form data
+function show(key) { // The function takes the parameter 'key', which is the name of the data to be retrieved.
     
-    //Percorre/itera sobre cada elemento do array 'formData'.
+    //Iterating over each element in the 'formData' array
     formData.forEach((element) => { 
         
-        //Verifica se o elemento começa com o nome do parâmetro que procuramos (exemplo: "first", "email").
+        //Checking if the element starts with the specified parameter (e.g., "first", "email")
         if (element.startsWith(key)) { 
 
-            //O resultado vai ser mostrado + replace('%40',"@") vai substituit o %40 por @ no email
-            result=element.split('=')[1]
-            .replace('%40',"@")
-            .replace(/\+/g, " "); //removendo o + que tinha no location
-        } //Fim do 'if'.
-    })
-    return(result)//Retorna o valor encontrado para quem chamou a função 'show'.
-} //Fim da função 'show'.
+            //Splitting the key-value pair and extracting the value
+            //.replace('%40',"@") replaces '%40' with '@' in email addresses
+            result = element.split('=')[1]
+                .replace('%40', "@")
+                .replace(/\+/g, " "); //Removes '+' symbols and replaces them with spaces.
+        }
+    });
+    return result; //Returns the found value to whoever called the 'show' function.
+}
 
+//Function to format the current timestamp
+function getFormattedTimestamp() {
+    const now = new Date();// Gets the current date and time
+    const year = now.getFullYear(); // Extracts the year
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Extracts the month (adds leading 0 if needed)
+    const day = String(now.getDate()).padStart(2, '0'); // Extracts the day (adds leading 0 if needed)
+    const hours = String(now.getHours()).padStart(2, '0'); // Extracts the hour (adds leading 0 if needed)
+    const minutes = String(now.getMinutes()).padStart(2, '0'); // Extracts the minutes (adds leading 0 if needed)
+    const seconds = String(now.getSeconds()).padStart(2, '0'); // Extracts the seconds (adds leading 0 if needed)
 
-//Exibindo as informações no elemento com id="results".
-const showInfo = document.querySelector('#results') //A partir do <div id="results"></div>, vamos usar o js para mostrar as informações do user através de mensagem.
+    // Returns the formatted timestamp in "YYYY-MM-DD HH:MM:SS" format
+    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+}
+
+// Displaying the retrieved information inside the <div id="results"></div>
+const showInfo = document.querySelector('#results'); // Selects the <div> with id="results" to display the user's data.
 showInfo.innerHTML = `
-  <h2>Membership Application Summary</h2>
   <p><strong>First Name:</strong> ${show('first')}</p>
   <p><strong>Last Name:</strong> ${show('last')}</p>
   <p><strong>Email:</strong> <a href="mailto:${show('email')}">${show('email')}</a></p>
-  <p><strong>Mobile Number:</strong> ${show('mobile')}</p>
+  <p><strong>Mobile Number:</strong> ${show('phone')}</p>
   <p><strong>Business Name:</strong> ${show('business')}</p>
-  <p><strong>Application Submitted:</strong> ${show('timestamp')}</p>
-`
+  <p><strong>Application Submitted:</strong> ${getFormattedTimestamp()}</p>
+`;
