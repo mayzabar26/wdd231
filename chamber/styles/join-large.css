@@ -256,6 +256,6 @@
     
     p {color: var(--color-02);}
 
-    a {color: var(--color-02);}
+    a strong {color: var(--color-02);}
 
 }
