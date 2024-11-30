@@ -30,20 +30,20 @@ function show(key) { // The function takes the parameter 'key', which is the nam
 
 //Function to format the current timestamp
 function getFormattedTimestamp() {
-    const now = new Date();// Gets the current date and time
-    const year = now.getFullYear(); // Extracts the year
-    const month = String(now.getMonth() + 1).padStart(2, '0'); // Extracts the month (adds leading 0 if needed)
-    const day = String(now.getDate()).padStart(2, '0'); // Extracts the day (adds leading 0 if needed)
-    const hours = String(now.getHours()).padStart(2, '0'); // Extracts the hour (adds leading 0 if needed)
-    const minutes = String(now.getMinutes()).padStart(2, '0'); // Extracts the minutes (adds leading 0 if needed)
-    const seconds = String(now.getSeconds()).padStart(2, '0'); // Extracts the seconds (adds leading 0 if needed)
+    const now = new Date();//Gets the current date and time
+    const year = now.getFullYear(); //Extracts the year
+    const month = String(now.getMonth() + 1).padStart(2, '0'); //Extracts the month (adds leading 0 if needed)
+    const day = String(now.getDate()).padStart(2, '0'); //Extracts the day (adds leading 0 if needed)
+    const hours = String(now.getHours()).padStart(2, '0'); //Extracts the hour (adds leading 0 if needed)
+    const minutes = String(now.getMinutes()).padStart(2, '0'); //Extracts the minutes (adds leading 0 if needed)
+    const seconds = String(now.getSeconds()).padStart(2, '0'); //Extracts the seconds (adds leading 0 if needed)
 
-    // Returns the formatted timestamp in "YYYY-MM-DD HH:MM:SS" format
+    //Returns the formatted timestamp in "YYYY-MM-DD HH:MM:SS" format
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
 
-// Displaying the retrieved information inside the <div id="results"></div>
-const showInfo = document.querySelector('#results'); // Selects the <div> with id="results" to display the user's data.
+//Displaying the retrieved information inside the <div id="results"></div>
+const showInfo = document.querySelector('#results'); //Selects the <div> with id="results" to display the user's data.
 showInfo.innerHTML = `
   <p><strong>First Name:</strong> ${show('first')}</p>
   <p><strong>Last Name:</strong> ${show('last')}</p>
