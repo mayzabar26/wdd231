@@ -37,13 +37,11 @@ function show(key) { //A função recebe o parâmetro 'cup', que é o nome do da
 //Exibindo as informações no elemento com id="results".
 const showInfo = document.querySelector('#results') //A partir do <div id="results"></div>, vamos usar o js para mostrar as informações do user através de mensagem.
 showInfo.innerHTML = `
-<p>Appointment for ${show('first')} ${show("last")}</p>
-<p>Proxy ${show("ordinance")} on ${show('fecha')} in the ${show('location')} Temple.</p>
-<p>Your phone: ${show('phone')}</p>
-<p>Your email: <a href="mailto:${show('email')}">${show('email')}</a></p>
-`;
-// Atualiza o conteúdo HTML do <div id="results"> com os dados formatados.
-// Cada chamada para 'show()' busca e insere a informação correspondente: 
-// - Nome e sobrenome do usuário ('first' e 'last').
-// - Informações da procuração ('ordinance'), data ('fecha') e local do templo ('location').
-// - Telefone ('phone') e e-mail ('email').
+  <h2>Membership Application Summary</h2>
+  <p><strong>First Name:</strong> ${show('first')}</p>
+  <p><strong>Last Name:</strong> ${show('last')}</p>
+  <p><strong>Email:</strong> <a href="mailto:${show('email')}">${show('email')}</a></p>
+  <p><strong>Mobile Number:</strong> ${show('mobile')}</p>
+  <p><strong>Business Name:</strong> ${show('business')}</p>
+  <p><strong>Application Submitted:</strong> ${show('timestamp')}</p>
+`
