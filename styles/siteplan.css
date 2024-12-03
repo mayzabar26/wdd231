@@ -1,107 +1,130 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+/**********Basic reset**********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #000000;
-    --secondary-color: #bebeba ;
-    --accent1-color: #ffffff;
-    --accent2-color: #003049;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Poppins";
-    --paragraph-font: "Roboto Condensed", "Roboto Static";
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #000000;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --nav-link-color: #ffffff;
-    --nav-background-color: #000000;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #bebeba;
-  }
+  --primary-color: #88ccee;
+  --secondary-color: #d94a38;
+  --accent1-color: #f4ede4;
+  --accent2-color: #66a182;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', 'Open Sans', sans-serif;
+  --text-color: #333;
+  --background-color: #f4ede4;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-    font-size: 18px;
-    text-align: center;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 20px;
 }
 
+/**********Header styles**********/
 header {
-    background-color: var(--headline-color-on-white); 
-    color: var(--accent1-color);
-    font-size: 1rem;
-    padding: 1rem;
-    margin: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-h1, h2, h3 {
-    text-align: center; 
-    margin: 0.7rem;
-    font-family: "Poppins";
-    font-size: 1.8rem;
+/**********Heading styles**********/
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
 }
 
-h4 {margin: 0.8rem; font-size: 1.4rem;}
-
-.colored {
-    background-color: var(--headline-color-on-white);
-    color: var(--accent1-color);
-    padding: 1rem;
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--accent2-color);
 }
 
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
+/**********Paragraph styles**********/
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
-.colors th {
-    background-color: #999;
-  }
-  .colors td{
-    width: 25%;
-    height: 3em;
-  }
-  
-  .primary {
-    background-color: var(--primary-color);
-  }
+p.desktop,
+p.mobile {
+  font-weight: bold;
+  margin-top: 15px;
+}
 
-  .secondary {
-    background-color: var(--secondary-color); 
-  }
+/**********List styles**********/
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
 
-  .accent1 {
-    background-color: var(--accent1-color);
-  }
+/**********Table for colors**********/
+table.colors {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
 
-  .accent2{
-    background-color: var(--accent2-color);
-  }
-  
+table.colors th,
+table.colors td {
+  text-align: center;
+  padding: 10px;
+}
 
-main {padding: 2rem;}
+table.colors th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
-hr {margin: 1rem;}
+.primary {
+  background-color: var(--primary-color);
+}
 
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+/**********Images**********/
 img {
-    display: block; 
-    margin: 1.3rem auto; 
-    align-items: center; 
-    justify-content: center;
-    border: 2px solid #000000;
-    width: 70%; 
-    height: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-@media (max-width: 700px) {
-  header {
-      padding: 0.5rem; /* Ajuste o padding conforme necessário */
-  }
-  h1, h2, h3 {font-size: 17px;}
+/********** Center the image with the "mobile" class **********/
+img.mobile {
+  display: block; /* Ensures it's treated as a block-level element */
+  margin: 10px auto; /* Centers the image horizontally */
+  text-align: center; /* For clarity, though not required for images */
+}
 
-  p {font-size: 15px;}
+/**********Responsive styles for images**********/
+@media (max-width: 768px) {
+  header img {
+      width: 100%; /*Stacked on smaller screens*/
+      margin: 10px 0;
+  }
 }
