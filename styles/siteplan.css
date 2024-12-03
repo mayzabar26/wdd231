@@ -21,8 +21,9 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   padding: 20px;
+  text-align: justify;
 }
 
 /**********Header styles**********/
@@ -81,11 +82,11 @@ table.colors {
 table.colors th,
 table.colors td {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 table.colors th {
-  background-color: var(--primary-color);
+  background-color: black;
   color: #fff;
 }
 
@@ -114,11 +115,11 @@ img {
   border-radius: 8px;
 }
 
-/********** Center the image with the "mobile" class **********/
+/**********Center the image with the "mobile" class**********/
 img.mobile {
-  display: block; /* Ensures it's treated as a block-level element */
-  margin: 10px auto; /* Centers the image horizontally */
-  text-align: center; /* For clarity, though not required for images */
+  display: block; /*Ensures it's treated as a block-level element*/
+  margin: 10px auto; /*Centers the image horizontally*/
+  text-align: center; /*For clarity, though not required for images*/
 }
 
 /**********Responsive styles for images**********/
