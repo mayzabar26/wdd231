@@ -462,7 +462,7 @@ h3 {color: var(--color-02); text-align: left;}
     align-items: center; 
     text-align: center;}
 
-.li {text-align: justify; margin: 13.4px; font-weight: 600; color: var(--color-04);}
+.li {text-align: justify; margin: 13px; font-weight: 600; color: var(--color-04);}
 
 .facts {
     color: var(--color-02); 
