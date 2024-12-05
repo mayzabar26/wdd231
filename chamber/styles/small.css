@@ -462,14 +462,16 @@ h3 {color: var(--color-02); text-align: left;}
     align-items: center; 
     text-align: center;}
 
-.li {text-align: justify; margin: 20px; font-weight: 600; color: var(--color-04);}
+.li {text-align: justify; margin: 13.4px; font-weight: 600; color: var(--color-04);}
 
 .facts {
     color: var(--color-02); 
     margin: 5px;
-    margin-top: -15px; 
+    margin-top: 10px; 
     text-align: justify; 
-    font-size: 0.8rem;}
+    font-size: 0.8rem;
+    font-weight: 100;
+}
 
 .img-slz {width: 100%;}
 .img-text {margin: 10px; color: var(--color-02); text-align: justify;}
