@@ -1,18 +1,25 @@
 /*FILE FOR WIDE SCREEN*/
+:root {
+    --font-family-01: "Roboto";
+    --font-family-02: "Open Sans";
+    --font-family-03: "Poppins";
+  
+    --color-01: #ffffff;
+    --color-02: #000000;
+    --color-03: #1E4AC4;
+    --color-04: #BC0E0E;
+}
 
 @media only screen and (min-width: 38rem) {
+
+    /***HEADER AND NAV BAR***/
     #myButton {display: none;} /*This will make our hamb menu close for wide screen*/
-
-    ul.menuLinks, ul.menuLinks.open {
-        display: flex; 
-        justify-content: end;} /*Will organize our menu links in the and of the bar*/
-
+    ul.menuLinks, ul.menuLinks.open {display: flex; justify-content: end;} /*Will organize our menu links in the and of the bar*/
     ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
-
     .company-name {font-size: 1.7rem; color: var(--color-01); text-align: left;}
-
     header {background-color: var(--color-03);}
 
+    /***FOOTER AND SOCIALS ICON***/
     footer {
         background-color: var(--color-04); 
         padding: 1rem;
@@ -22,11 +29,8 @@
     }
     
     .footer-info {padding: 20px; text-align: left;}
-    
     .footer-js {padding: 20px; text-align: right;}
-    
     #currentYear, #lastModified, p {color: var(--color-01);}
-    
     #lastModified {font-weight: 700; color: var(--color-01);}
 
     .footer-social {
@@ -43,15 +47,77 @@
         text-decoration: none;
     }
     
-    .social-icon:hover {
-        color: var(--color-02);
+    .social-icon:hover {color: var(--color-02);}
+    nav {grid-template-rows: 1fr;}
+    .list {width: 600px;}
+    .list .member-card {font-size: 0.75rem;}
+    .grid {font-size: 0.89rem;}
+
+
+    /*****HOME PAGE - LARGE DEVICES*****/
+    .slideshow-container {position: relative; margin: auto; max-width: 95%;} /*Slideshow container*/
+    .my-slides {display: none;} /* Hide the images by default */
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
     }
 
-    nav {grid-template-rows: 1fr;}
+    .next {right: 0; border-radius: 3px 0 0 3px;} /*Position the "next button" to the right*/
+    .prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);} /*On hover, add a black background color with a little bit see-through*/
+    .numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;} /*Number text (1/3 etc)*/
+    .active, .dot:hover {background-color: #717171;}
+    .fade {animation-name: fade; animation-duration: 1.5s;} /*Fading animation*/
 
-    .list {width: 600px;}
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
 
-    .list .member-card {font-size: 0.75rem;}
+    /*learn more button, h1 and p*/
+    .company {text-align: center; color: var(--color-01);}
+    .join-group {font-size: 15px;}
+    .button-more-info {margin-left: 42%;}
 
-    .grid {font-size: 0.89rem;}
+    /*EVENT, WEATHER AND FORECAST SECTION*/
+    .container {justify-content: space-between;}
+
+      .weather-forecast .content {padding-top: 40px;}
+      
+      #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        margin-top: 10px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .spotlight-card {
+        width: auto;
+        padding: 20px;
+        max-width: 550px;
+        min-height: 150px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: var(--color-01);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .spotlight-card h3 {color: var(--color-02); text-align: center;}
+    .spotlight-card p {color: var(--color-02);}
+
+    /**************DISCOVERY PAGE**************/
 }
