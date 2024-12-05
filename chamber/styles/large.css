@@ -128,4 +128,11 @@
         margin: 0;
         padding: 15px;
     }
+
+    .facts {color: var(--color-02); font-size: 0.9rem;}
+    .img-text {color: var(--color-02); text-align: justify; font-size: 0.9rem;}
+    figcaption {padding-bottom: 15px;}
+
+
+
 }

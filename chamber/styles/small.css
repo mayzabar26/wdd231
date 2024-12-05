@@ -20,8 +20,7 @@ header {
     align-items: end;
     background-color: var(--color-01);
     padding: 0.4rem;
-    align-items: center;
-}
+    align-items: center;}
 
 .company-name {
     font-family: var(--font-family-03); 
@@ -29,14 +28,11 @@ header {
     color: var(--color-02);
     padding: 1rem;
     text-align: center;
-    font-weight: 600;
-}
+    font-weight: 600;}
 
 /*NAVIGATION TAGS*/
 nav {background-color: var(--color-04);}
-
 .logo-img {margin: 10px;}
-
 #myButton::before {content: "=";}
 
 #myButton {
@@ -47,19 +43,16 @@ nav {background-color: var(--color-04);}
     cursor: pointer;
     width: 100%;
     text-align: right; /*Will be able to chage the ham button to left or right*/
-    padding: .25rem 2vw; /*also will help in the size of the button. Min size is 320x47*/
-}
+    padding: .25rem 2vw;} /*also will help in the size of the button. Min size is 320x47*/
 
 ul.menuLinks li a { /*Will change all the default color of my links in the nav bar*/
     display: block;
     padding: .75rem 2vw;
     color: var(--color-01);
     text-decoration: none;
-    font-family: var(--font-family-03);
-}
+    font-family: var(--font-family-03);}
 
 li.current-menu-item a {background-color: rgb(0,0,0,0.2);} /*darker backgrouund in the current page*/
-
 ul.menuLinks {list-style-type: none;} /*Will hide my menu for small devices. Also the list style will hide the dots for wide screen*/
 
 /*CSS FOR OPEN HAMBURGER BUTTON*/
@@ -67,9 +60,7 @@ ul.menuLinks {list-style-type: none;} /*Will hide my menu for small devices. Als
 
 /*ANIMATED TRANSITION*/
 nav {display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.5s ease-out;}
-
 nav ul {overflow: hidden;}
-
 nav.open {grid-template-rows: 1fr;}
 
 
@@ -84,41 +75,31 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 	gap: 1.5rem;
 	margin: 10px;
     font-family: var(--font-family-03);
-    font-size: 0.89rem;
-}
+    font-size: 0.89rem;}
 
 .list {
 	display: flex;
     flex-direction: column;
 	width: 450px;
 	margin: 0 auto;
-	padding: 1rem;
-}
+	padding: 1rem;}
 
-.list .member-card:nth-child(odd) {
-	background-color: var(--color-04);
-}
-
-.list .member-card:nth-child(even) {
-	background-color: rgb(112, 10, 10);
-}
+.list .member-card:nth-child(odd) {background-color: var(--color-04);}
+.list .member-card:nth-child(even) {background-color: rgb(112, 10, 10);}
 
 .cardsViews {
 	display: flex;
 	justify-content: center;
 	padding: 1rem;
-	gap: 1rem;
-}
+	gap: 1rem;}
 
 .cardsViews img {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	padding-top: 1rem;
-}
+	padding-top: 1rem;}
 
-.list .cardsViews img {display: none;} /* remove image from the flow */
-
+.list .cardsViews img {display: none;} /*remove image from the flow*/
 .cardsViews p, a {padding-top: 1rem;}
 
 .member-card {
@@ -126,8 +107,7 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
     border-style: double; 
     color: var(--color-01); /*Title's color*/
     height: 330px;
-    padding: 20px;
-}
+    padding: 20px;}
 
 .member-card img {
 	height: auto;
@@ -136,14 +116,11 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 	padding-top: 2rem;
     max-width: 120px; 
     height: auto; 
-    display: block;
-}
+    display: block;}
+
 .member-card h3 {padding-bottom: 10px;}
-
 .member-card p, a {color: var(--color-01);} /*Will make the p color white*/
-
 .list .member-card img {display: none;}
-
 .list .member-card {font-size: 0.7rem; height: 110px; font-family: var(--font-family-03); padding: 15px;}
 
 #gridBtn { /*CSS FOR THE GRID BUTTON*/
@@ -156,11 +133,9 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 	cursor: pointer;
 	background-color: transparent;
 	transition: background-color 0.3s ease;
-	padding: 1rem;
-}
+	padding: 1rem;}
 
 #gridBtn:hover {background-color: rgb(83, 173, 251);}
-
 #gridBtn.active {background-color: var(--color-03);}
 
 #listBtn { /*CSS FOR THE GRID BUTTON*/
@@ -173,11 +148,9 @@ main {display: block; padding: 1rem; background-color: var(--color-01);}
 	cursor: pointer;
 	background-color: transparent;
 	transition: background-color 0.3s ease;
-	padding: 1rem;
-}
+	padding: 1rem;}
 
 #listBtn:hover {background-color: rgb(83, 173, 251);}
-
 #listBtn.active {background-color: var(--color-03)}
 
 /*FOOTER AND SOCIALS*/
@@ -189,20 +162,17 @@ footer {
     text-align: left;
     gap: 10px;
     font-family: var(--font-family-03);
-    font-size: 0.8rem;
-}
+    font-size: 0.8rem;}
 
 .footer-info, 
 .footer-social, 
-.footer-js {
-    padding: 5px 0; /*Will reduce internal spacing*/
-}
+.footer-js {padding: 5px 0; /*Will reduce internal spacing*/}
 
 .footer-social {
     display: flex;
     justify-content: center; /*Centering the icons*/
-    gap: 8px; /*Space between the icons*/
-}
+    gap: 8px;} /*Space between the icons*/
+
 
 #currentYear, #lastModified, p {color: var(--color-01);}
 #lastModified {font-weight: 700; color: var(--color-01);}
@@ -224,8 +194,7 @@ footer {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
+    border-radius: 0 3px 3px 0;}
 
 .prev {left: 0;}
 .next {right: 0;}
@@ -244,12 +213,12 @@ footer {
     border-radius: 5px;
     font-size: 14px;
     font-family: var(--font-family-03);
-    margin-left: 33%;
-}
+    margin-left: 33%;}
 
 .button-more-info:hover {background-color: var(--color-02);}
 .my-slides {background-color: var(--color-03); padding-bottom: 15px;}
 h1, p {font-family: var(--font-family-03);}
+.event-text {color: var(--color-01); text-align: center;}
 .company {text-align: center; font-size: 25px; color: var(--color-01);}
 .join-group {color: var(--color-01); text-align: center; font-size: 12px; margin-top: -15px;}
 
@@ -264,8 +233,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
-}
+    color: #333;}
   
 .container {display: flex; flex-wrap: wrap; padding: 1rem; gap: 1rem;}
   
@@ -278,8 +246,7 @@ section {
     justify-content: space-between;
     padding: 1rem;
     flex: 1 1 30%; 
-    min-width: 200px;
-}
+    min-width: 200px;}
   
 section h2 {
     margin: 0;
@@ -287,8 +254,7 @@ section h2 {
     color: var(--color-01);
     padding: 0.5rem;
     font-size: 1.2rem;
-    text-align: center;
-}
+    text-align: center;}
   
 .content {font-size: 0.9rem; flex-grow: 1;}
 .content img {width: 100%; height: auto; margin: 0.5rem 0;}
@@ -319,8 +285,7 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
     margin: 0;
     margin-top: 20px;
     padding: 90px;
-    font-family: var(--font-family-03);
-}
+    font-family: var(--font-family-03);}
 
 .spotlight-card {
     max-width: 300px;
@@ -339,22 +304,19 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
     object-fit: cover; 
     margin-bottom: 15px;
     border-radius: 50%; 
-    border: 2px solid var(--color-03);
-}
+    border: 2px solid var(--color-03);}
 
 .spotlight-card h3 {
     font-family: var(--font-family-03);
     font-size: 1.2rem;
     color: var(--color-04);
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
 
 .spotlight-card p {
     font-family: var(--font-family-01);
     font-size: 0.9rem;
     color: var(--color-02);
-    margin: 5px 0;
-}
+    margin: 5px 0;}
 
 .spotlight-card a {
     display: inline-block;
@@ -366,8 +328,7 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
     border-radius: 5px;
     font-size: 0.9rem;
     font-weight: 600;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 
 .spotlight-card a:hover {background-color: var(--color-04);}
 
@@ -378,8 +339,7 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
     background-color: var(--color-03); 
     font-family: var(--font-family-03); 
     color: var(--color-02);
-    padding: 10px;
-}
+    padding: 10px;}
 
 .joinTitle {text-align: center; color: var(--color-01);}
 
@@ -389,24 +349,21 @@ h3  {text-align: center; padding-top: 10px; color: var(--color-01);}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-}
+    align-content: center;}
 
 .membership-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
-}
+    padding-bottom: 50px;}
 
 .section-container {
     border: solid; 
     padding: 15px;
     margin: 5px;
     background-color: var(--color-01);
-    border-radius: 15px;
-}
+    border-radius: 15px;}
 
 h3 {color: var(--color-02); text-align: left;}
 .form-section {border-top: var(--color-04) solid 1px;}
@@ -425,8 +382,7 @@ h3 {color: var(--color-02); text-align: left;}
     border-radius: 5px;
     border: var(--color-02) solid 2px;
     width: 90%;
-    margin: 7px;
-}
+    margin: 7px;}
 
 
 /******************SUBMIT BUTTON AND DETAILS BUTTON******************/
@@ -439,8 +395,7 @@ h3 {color: var(--color-02); text-align: left;}
     border-radius: 5px;
     border: 2px solid white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 
 .btn:hover {background-color: var(--color-04);}
 
@@ -450,8 +405,7 @@ h3 {color: var(--color-02); text-align: left;}
     flex-wrap: wrap;
     justify-content: center; 
     gap: 20px; 
-    padding: 10px;
-}
+    padding: 10px;}
 
 .membership-container {
     display: flex;
@@ -462,8 +416,7 @@ h3 {color: var(--color-02); text-align: left;}
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 550px; 
-}
+    width: 550px;}
 
 .membership-container img {margin-bottom: 10px;}
 
@@ -476,8 +429,7 @@ h3 {color: var(--color-02); text-align: left;}
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 
 .btnDetails:hover {background-color: #BC0E0E;}
 
@@ -486,8 +438,7 @@ h3 {color: var(--color-02); text-align: left;}
 .membership-container:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    background-color: rgb(216, 236, 249);
-}
+    background-color: rgb(216, 236, 249);}
 
 .membership-container img {animation: pulse 1.5s infinite;}
 
@@ -509,5 +460,57 @@ h3 {color: var(--color-02); text-align: left;}
     display: grid;
     flex-direction: column;
     align-items: center; 
-    text-align: center; 
+    text-align: center;}
+
+.li {text-align: justify; margin: 20px; font-weight: 600; color: var(--color-04);}
+
+.facts {
+    color: var(--color-02); 
+    margin: 5px;
+    margin-top: -15px; 
+    text-align: justify; 
+    font-size: 0.8rem;}
+
+.img-slz {width: 100%;}
+.img-text {margin: 10px; color: var(--color-02); text-align: justify;}
+.slz-img {border: 5px solid var(--color-04);}
+
+/**************Style for the sidebar content**************/
+/*Style for the sidebar content*/
+#message-content {
+    background-color: var(--color-02);
+    padding-top: 5px;
+    margin: 10px 0;
+    font-family: var(--font-family-01);
+    font-size: 1rem;
+}
+
+.message {color: var(--color-01);}
+
+/*Style for the message about the visit*/
+.message {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--color-01);
+    font-weight: 600;
+}
+
+/*Style for the visitor count section*/
+#visitor-count {
+    background-color: var(--color-03);
+    color: var(--color-01);
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*Additional styling for responsive design*/
+@media only screen and (max-width: 768px) {
+    #message-content {
+        padding: 15px;
+    }
+    #visitor-count {
+        font-size: 1rem;
+    }
 }
