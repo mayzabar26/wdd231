@@ -92,10 +92,9 @@
 
     /*EVENT, WEATHER AND FORECAST SECTION*/
     .container {justify-content: space-between;}
-
-      .weather-forecast .content {padding-top: 40px;}
+    .weather-forecast .content {padding-top: 40px;}
       
-      #spotlight-container {
+    #spotlight-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         gap: 20px;
@@ -132,7 +131,26 @@
     .facts {color: var(--color-02); font-size: 0.9rem;}
     .img-text {color: var(--color-02); text-align: justify; font-size: 0.9rem;}
     figcaption {padding-bottom: 15px;}
+    .image-div {padding-bottom: 20px;}
 
+    /*IMG ANIMATION*/
+    .slz-img:hover {
+        transform: scale(1.02); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        background-color: rgb(216, 236, 249);
+    }
 
+    .slz-img img {animation: pulse 1.5s infinite;}
 
+    @keyframes pulse {
+        0% {
+            transform: scale(1); 
+        }
+        50% {
+            transform: scale(1.1); 
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
 }

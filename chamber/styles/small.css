@@ -474,6 +474,8 @@ h3 {color: var(--color-02); text-align: left;}
 .img-slz {width: 100%;}
 .img-text {margin: 10px; color: var(--color-02); text-align: justify;}
 .slz-img {border: 5px solid var(--color-04);}
+figcaption {padding-bottom: 15px;}
+.image-div {padding-top: 20px;}
 
 /**************Style for the sidebar content**************/
 /*Style for the sidebar content*/
