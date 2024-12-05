@@ -181,7 +181,7 @@ footer {
 /**************HOME PAGE**************/
 /******************SLIDESHOW CONTAINER******************/
 .slideshow-container {position: relative; max-width: 100%; margin: auto;}
-.my-slides img {max-width: 100%; height: 400;}
+.my-slides img {max-width: 100%;}
 .my-slides, .numbertext {display: none;} /*Hide the images by default*/
 
 .prev, .next { /*Style for the previous and next buttons*/
